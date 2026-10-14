@@ -1,0 +1,109 @@
+site_name: Snowflake Mastery Path
+site_description: A free Snowflake course — architecture, virtual warehouses, loading data, semi-structured data, Time Travel, micro-partitions and clustering, Snowpipe, streams, tasks, dynamic tables, governance, data sharing, Snowpark, Cortex and cost control.
+site_url: https://sigilipelli.github.io/snowflake-mastery-path/
+repo_url: https://github.com/sigilipelli/snowflake-mastery-path
+repo_name: snowflake-mastery-path
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light blue
+      accent: light blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/progress-tracker.css
+
+extra_javascript:
+  - javascripts/progress-tracker.js
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - License: license.md
+  - "Level 1 · Snowflake Foundations":
+      - Overview: level-1/index.md
+      - "01 · How Snowflake Is Built: Storage, Compute & Services": level-1/01-architecture.md
+      - "02 · Accounts, Snowsight, Snowflake CLI & Python": level-1/02-accounts-and-clients.md
+      - "03 · Databases, Schemas, Tables & Data Types": level-1/03-objects-and-types.md
+      - "04 · Virtual Warehouses: Sizing, Suspend & Credits": level-1/04-virtual-warehouses.md
+      - "05 · Loading Data: Stages, File Formats & COPY INTO": level-1/05-loading-copy-into.md
+      - "06 · Snowflake SQL: Windows, QUALIFY & Extensions": level-1/06-snowflake-sql.md
+      - "07 · Semi-Structured Data: VARIANT & FLATTEN": level-1/07-semi-structured.md
+      - "08 · Time Travel, UNDROP & Fail-safe": level-1/08-time-travel-failsafe.md
+      - "09 · Zero-Copy Cloning & Environments": level-1/09-zero-copy-cloning.md
+      - "10 · Project — Load & Analyse a Sales Dataset": level-1/10-project-sales-analytics.md
+  - "Level 2 · Performance & Data Engineering":
+      - Overview: level-2/index.md
+      - "01 · Micro-Partitions & Pruning": level-2/01-micro-partitions-pruning.md
+      - "02 · Clustering Keys & Automatic Clustering": level-2/02-clustering.md
+      - "03 · Query Profile & Performance Tuning": level-2/03-query-profile-tuning.md
+      - "04 · The Three Caches": level-2/04-caching-layers.md
+      - "05 · Continuous Loading with Snowpipe": level-2/05-snowpipe.md
+      - "06 · Streams: Change Data Capture": level-2/06-streams-cdc.md
+      - "07 · Tasks & Task Graphs": level-2/07-tasks.md
+      - "08 · Dynamic Tables": level-2/08-dynamic-tables.md
+      - "09 · Unloading, External Tables & Iceberg": level-2/09-unloading-iceberg.md
+      - "10 · Project — An Incremental ELT Pipeline": level-2/10-project-incremental-pipeline.md
+  - "Level 3 · Security, Governance & Sharing":
+      - Overview: level-3/index.md
+      - "01 · Access Control: Roles, Privileges & Hierarchies": level-3/01-rbac.md
+      - "02 · Authentication: MFA, Key Pairs, OAuth & SSO": level-3/02-authentication.md
+      - "03 · Network Policies & Private Connectivity": level-3/03-network-security.md
+      - "04 · Masking & Row Access Policies": level-3/04-masking-row-access.md
+      - "05 · Object Tagging & Data Classification": level-3/05-tags-classification.md
+      - "06 · Secure Views & Secure Functions": level-3/06-secure-views-udfs.md
+      - "07 · Secure Data Sharing & the Marketplace": level-3/07-data-sharing.md
+      - "08 · Encryption, Key Management & Compliance": level-3/08-encryption-compliance.md
+      - "09 · Auditing with ACCOUNT_USAGE & Access History": level-3/09-auditing-account-usage.md
+      - "10 · Project — A Governed Multi-Team Platform": level-3/10-project-governed-platform.md
+  - "Level 4 · Development, Cost & Operations":
+      - Overview: level-4/index.md
+      - "01 · SQL UDFs, Snowflake Scripting & Procedures": level-4/01-udfs-procedures.md
+      - "02 · Snowpark for Python": level-4/02-snowpark-python.md
+      - "03 · Python UDFs, UDTFs & Vectorized UDFs": level-4/03-python-udfs.md
+      - "04 · Cortex AI Functions": level-4/04-cortex-ai.md
+      - "05 · Cost Management: Credits, Monitors & Budgets": level-4/05-cost-management.md
+      - "06 · Scaling: Multi-Cluster, Query Acceleration & Gen2": level-4/06-warehouse-scaling.md
+      - "07 · Replication, Failover & Business Continuity": level-4/07-replication-bcdr.md
+      - "08 · dbt, Snowflake CLI & CI/CD": level-4/08-dbt-cicd.md
+      - "09 · Migrating to Snowflake": level-4/09-migration.md
+      - "10 · Capstone — A Cost-Aware Analytics Platform": level-4/10-capstone-cost-aware-platform.md

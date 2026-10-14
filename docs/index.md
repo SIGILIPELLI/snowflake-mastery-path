@@ -1,0 +1,228 @@
+---
+title: "Free Snowflake Course: Architecture, Loading, Performance, Streams and Tasks, Security, Sharing, Snowpark, Cortex AI, Cost and dbt"
+description: "Free Snowflake course: 40 lessons on architecture, loading, pruning, pipelines, governance, Snowpark, Cortex AI, cost control and dbt CI/CD."
+---
+
+# Snowflake Mastery Path
+
+<div class="mp-hero-lockup">
+  <div class="mp-hero-globe">
+    <svg viewBox="0 0 160 160" class="mp-globe-svg mp-mark">
+      <circle cx="80" cy="80" r="74" fill="var(--md-default-bg-color, #FAF7EF)" stroke="#2FA98D" stroke-width="5"/>
+      <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+      <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+      <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+      <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+      <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+    </svg>
+  </div>
+  <div class="mp-hero-divider"></div>
+  <div class="mp-hero-text">
+    <div class="mp-hero-title">Mastery Path</div>
+    <div class="mp-hero-sub">BOOTCAMP</div>
+    <div class="mp-hero-rule"></div>
+    <div class="mp-hero-byline">VINOD BHANUJA</div>
+  </div>
+</div>
+
+Snowflake is easy to start with: create a warehouse, load a file, run SQL. It's also easy to get surprising results and
+surprising bills. A load that quietly keeps 199,997 of 200,000 rows, a `FLATTEN` that drops a quarter of your customers, a
+one-day query that reads every partition because of how rows arrived, a join that makes revenue six times too high, a
+`MERGE` that inserts the same order twice, administrators who can read raw PII through an innocent role grant, a warehouse
+bill that's 86% idle time, and a dbt model that passes every test while serving stale numbers: none of these are Snowflake
+bugs. They follow from how Snowflake actually works, and this course shows each one.
+
+It assumes you know SQL and some Python. It doesn't assume any Snowflake experience.
+
+**Level 1** covers the foundations: the three-layer architecture and credits, accounts and clients (Snowflake CLI and
+Python with key pairs), objects and types, warehouses and billing, loading with stages and `COPY`, Snowflake SQL,
+semi-structured JSON, Time Travel and Fail-safe, and zero-copy cloning, ending with a small analytics database.
+**Level 2** is performance and data engineering: micro-partitions and pruning, clustering, the Query Profile, the three
+caches, Snowpipe, streams, tasks, dynamic tables, unloading and Iceberg, ending with an incremental ELT pipeline.
+**Level 3** is security and governance: roles and privileges, authentication after the end of single-factor passwords,
+network policies, masking and row access policies, tags, secure views, data sharing, encryption and auditing, ending with
+a governed multi-team platform. **Level 4** is building and operating: UDFs and procedures, Snowpark, Python UDFs, Cortex
+AI functions, cost management, warehouse scaling, replication and failover, dbt and CI/CD, and migration, ending with a
+cost-aware platform whose chargeback is tested.
+
+Every lesson has a **How It Actually Works** section: why a filter on one column can skip 97 of 98 micro-partitions and the
+same filter on another can't skip any, why a clone costs nothing until it diverges, why a secure view is slower, why a
+masking rule that names one role also unmasks every role above it, and why per-query cost attribution never adds up to the
+bill.
+
+!!! note "Versions and what was actually run"
+    This course was written without access to a Snowflake account, and **no output is presented as Snowflake output**.
+    Every Snowflake SQL statement was parsed with sqlglot 30.22 (Snowflake dialect) and checked against Snowflake's
+    documentation as of **October 2026**. Where a result is shown, it comes from something that was really run, and is
+    labelled: the same SQL on the same generated data in **DuckDB 1.5.6**, Python models of the documented billing and
+    replication rules (with their assumptions stated), Snowflake CLI 3.29.0 and the Python connector for everything that
+    doesn't contact Snowflake, Snowpark 1.53.0 in its local testing mode, dbt-core 1.12.5, and pytest suites for every
+    project. Things that couldn't be run, such as Cortex AI output, real query profiles and failover, are described from the
+    documentation and never shown with invented results.
+
+    Snowflake changes quickly, and several features here are new in 2025–2026: mandatory MFA and the end of single-factor
+    passwords, programmatic access tokens, Snowpipe's per-GB pricing, task overlap policies, Cortex AI functions and model
+    access control, Gen2 as the default warehouse, Adaptive Warehouses, Optimized Refresh and RPO Assurance for replication,
+    and dbt Projects on Snowflake. Each lesson says what it was checked against, so you can compare with your account.
+
+## How the program is organized
+
+| Level | Focus | Modules | What you can do after |
+|-------|-------|---------|------------------------|
+| **1 · Snowflake Foundations** | Architecture, clients, objects, warehouses, loading, SQL, JSON, Time Travel, cloning | 10 | Build and query a well-organized database and predict its cost |
+| **2 · Performance & Data Engineering** | Pruning, clustering, profiles, caches, Snowpipe, streams, tasks, dynamic tables, Iceberg | 10 | Make queries read less and keep data fresh incrementally |
+| **3 · Security, Governance & Sharing** | RBAC, authentication, network, masking, tags, secure views, sharing, encryption, auditing | 10 | Run a shared platform where access is designed, tested and audited |
+| **4 · Building, Scaling & Operating** | UDFs, Snowpark, Cortex AI, cost, scaling, replication, dbt CI/CD, migration | 10 | Build on Snowflake and keep it fast, recoverable and affordable |
+
+Each level has 9 teaching modules plus a hands-on project (module 10), for **40 lessons** total.
+
+## How to use this site
+
+- **Use a free trial account.** Every exercise fits in Snowflake's free trial. Use your own account, never a shared or
+  production one, and give every warehouse `AUTO_SUSPEND = 60` from the start.
+- **Run the examples twice.** Once as written, and once on your account. Results shown from DuckDB or a model are labelled,
+  and comparing them with what Snowflake does is part of the learning.
+- **Watch the meter.** Keep an eye on `WAREHOUSE_METERING_HISTORY` while you work. The cost lessons are easier when you've seen
+  your own numbers.
+- **Do the projects.** Each one combines its level into something you could adapt for real work, and each comes with tests,
+  including the bugs those tests caught.
+
+## More from the Mastery Path series
+
+Free, structured, module-wise training across 86 other languages, platforms and disciplines:
+
+<div class="mastery-grid-wrap">
+<p class="mastery-grid-category">Languages</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/python-mastery-path/">🐍 Python</a>
+  <a href="https://sigilipelli.github.io/java-mastery-path/">☕ Java</a>
+  <a href="https://sigilipelli.github.io/javascript-mastery-path/">🟨 JavaScript</a>
+  <a href="https://sigilipelli.github.io/typescript-mastery-path/">🔷 TypeScript</a>
+  <a href="https://sigilipelli.github.io/csharp-mastery-path/">🔵 C#</a>
+  <a href="https://sigilipelli.github.io/shell-mastery-path/">🐚 Shell/Bash</a>
+  <a href="https://sigilipelli.github.io/powershell-mastery-path/">💻 PowerShell</a>
+  <a href="https://sigilipelli.github.io/c-mastery-path/">🇨 C</a>
+  <a href="https://sigilipelli.github.io/cpp-mastery-path/">➕ C++</a>
+  <a href="https://sigilipelli.github.io/go-mastery-path/">🐹 Go</a>
+  <a href="https://sigilipelli.github.io/rust-mastery-path/">🦀 Rust</a>
+  <a href="https://sigilipelli.github.io/sql-mastery-path/">🗄️ SQL</a>
+  <a href="https://sigilipelli.github.io/ruby-mastery-path/">💎 Ruby</a>
+  <a href="https://sigilipelli.github.io/php-mastery-path/">🐘 PHP</a>
+  <a href="https://sigilipelli.github.io/kotlin-mastery-path/">🟣 Kotlin</a>
+  <a href="https://sigilipelli.github.io/swift-mastery-path/">🐦 Swift</a>
+  <a href="https://sigilipelli.github.io/dart-mastery-path/">🎯 Dart</a>
+  <a href="https://sigilipelli.github.io/scala-mastery-path/">🔴 Scala</a>
+  <a href="https://sigilipelli.github.io/r-mastery-path/">📊 R</a>
+  <a href="https://sigilipelli.github.io/matlab-mastery-path/">🟧 MATLAB</a>
+</div>
+<p class="mastery-grid-category">Web Frameworks</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/react-mastery-path/">⚛️ React</a>
+  <a href="https://sigilipelli.github.io/nextjs-mastery-path/">▲ Next.js</a>
+  <a href="https://sigilipelli.github.io/angular-mastery-path/">🅰️ Angular</a>
+  <a href="https://sigilipelli.github.io/vue-mastery-path/">💚 Vue.js</a>
+  <a href="https://sigilipelli.github.io/html-css-mastery-path/">🎨 HTML & CSS</a>
+  <a href="https://sigilipelli.github.io/tailwind-mastery-path/">🌬️ Tailwind CSS</a>
+  <a href="https://sigilipelli.github.io/django-mastery-path/">🎸 Django</a>
+  <a href="https://sigilipelli.github.io/fastapi-mastery-path/">🚀 FastAPI</a>
+  <a href="https://sigilipelli.github.io/graphql-mastery-path/">🕸️ GraphQL</a>
+  <a href="https://sigilipelli.github.io/nodejs-mastery-path/">🟩 Node.js</a>
+  <a href="https://sigilipelli.github.io/spring-boot-mastery-path/">🍃 Spring Boot</a>
+</div>
+<p class="mastery-grid-category">Mobile</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/flutter-mastery-path/">💙 Flutter</a>
+  <a href="https://sigilipelli.github.io/react-native-mastery-path/">📲 React Native</a>
+</div>
+<p class="mastery-grid-category">Testing & QA</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/java-testing-mastery-path/">🧪 Java Testing</a>
+  <a href="https://sigilipelli.github.io/cpp-testing-mastery-path/">🧪 C/C++ Testing</a>
+  <a href="https://sigilipelli.github.io/python-testing-mastery-path/">🧪 Python Testing</a>
+  <a href="https://sigilipelli.github.io/automotive-testing-mastery-path/">🚗 Automotive Testing</a>
+</div>
+<p class="mastery-grid-category">Security</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/cybersecurity-mastery-path/">🛡️ Cybersecurity</a>
+  <a href="https://sigilipelli.github.io/ethical-hacking-mastery-path/">🎯 Ethical Hacking</a>
+</div>
+<p class="mastery-grid-category">Cloud Platforms</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/aws-mastery-path/">☁️ AWS</a>
+  <a href="https://sigilipelli.github.io/azure-mastery-path/">☁️ Azure</a>
+  <a href="https://sigilipelli.github.io/gcp-mastery-path/">☁️ GCP</a>
+  <a href="https://sigilipelli.github.io/ibm-cloud-mastery-path/">☁️ IBM Cloud</a>
+  <a href="https://sigilipelli.github.io/adobe-mastery-path/">🎨 Adobe</a>
+</div>
+<p class="mastery-grid-category">Data & Analytics</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/data-engineering-mastery-path/">🛠️ Data Engineering</a>
+  <a href="https://sigilipelli.github.io/data-science-mastery-path/">📈 Data Science</a>
+  <a href="https://sigilipelli.github.io/tableau-mastery-path/">📊 Tableau</a>
+  <a href="https://sigilipelli.github.io/excel-mastery-path/">📗 Excel</a>
+  <a href="https://sigilipelli.github.io/pyspark-mastery-path/">⚡ PySpark</a>
+  <a href="https://sigilipelli.github.io/etl-datalake-mastery-path/">🏞️ ETL & Data Lake</a>
+  <a href="https://sigilipelli.github.io/power-bi-mastery-path/">📉 Power BI</a>
+</div>
+<p class="mastery-grid-category">Databases</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/postgresql-mastery-path/">🐘 PostgreSQL</a>
+  <a href="https://sigilipelli.github.io/mongodb-mastery-path/">🍃 MongoDB</a>
+  <a href="https://sigilipelli.github.io/redis-mastery-path/">🟥 Redis</a>
+  <a href="https://sigilipelli.github.io/snowflake-mastery-path/">❄️ Snowflake</a>
+</div>
+<p class="mastery-grid-category">AI / ML / LLM</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/ai-ml-mastery-path/">🤖 AI/ML</a>
+  <a href="https://sigilipelli.github.io/llm-dev-mastery-path/">🧠 LLM Dev</a>
+  <a href="https://sigilipelli.github.io/rag-mastery-path/">📚 RAG</a>
+  <a href="https://sigilipelli.github.io/edge-ai-mastery-path/">📱 Edge AI</a>
+  <a href="https://sigilipelli.github.io/claude-training-mastery-path/">🔶 Claude Training</a>
+  <a href="https://sigilipelli.github.io/ai-tools-mastery-path/">🧰 AI Tools</a>
+  <a href="https://sigilipelli.github.io/ml-math-mastery-path/">➗ ML Math Foundations</a>
+  <a href="https://sigilipelli.github.io/prompt-engineering-mastery-path/">✍️ Prompt Engineering</a>
+  <a href="https://sigilipelli.github.io/ai-agents-mastery-path/">🕹️ AI Agents</a>
+</div>
+<p class="mastery-grid-category">Embedded Systems</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/embedded-mastery-path/">🔌 Embedded</a>
+  <a href="https://sigilipelli.github.io/embedded-linux-mastery-path/">🐧 Embedded Linux</a>
+  <a href="https://sigilipelli.github.io/embedded-python-mastery-path/">🐍 Embedded Python</a>
+  <a href="https://sigilipelli.github.io/freertos-mastery-path/">⏱️ FreeRTOS</a>
+  <a href="https://sigilipelli.github.io/s32k-mastery-path/">🔧 S32K</a>
+</div>
+<p class="mastery-grid-category">Leadership & Management</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/product-manager-mastery-path/">📋 Product Manager</a>
+  <a href="https://sigilipelli.github.io/product-lead-mastery-path/">🧭 Product Lead</a>
+  <a href="https://sigilipelli.github.io/project-manager-mastery-path/">📅 Project Manager</a>
+  <a href="https://sigilipelli.github.io/ai-manager-mastery-path/">🤖 AI Manager</a>
+  <a href="https://sigilipelli.github.io/servant-leadership-mastery-path/">🤝 Servant Leadership</a>
+</div>
+<p class="mastery-grid-category">Professional Skills</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/english-fluency-mastery-path/">🗣️ English Fluency & IELTS</a>
+  <a href="https://sigilipelli.github.io/workday-mastery-path/">🧑‍💼 Workday</a>
+</div>
+<p class="mastery-grid-category">Careers & Interviews</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/dsa-interview-mastery-path/">🧩 DSA & Coding Interviews</a>
+  <a href="https://sigilipelli.github.io/system-design-mastery-path/">🏗️ System Design</a>
+</div>
+<p class="mastery-grid-category">Process & APIs</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/agile-mastery-path/">🔄 Agile/Scrum/Kanban</a>
+  <a href="https://sigilipelli.github.io/rest-api-mastery-path/">🔗 REST API</a>
+  <a href="https://sigilipelli.github.io/playwright-mastery-path/">🎭 Playwright</a>
+</div>
+<p class="mastery-grid-category">Infrastructure & Ops</p>
+<div class="mastery-grid">
+  <a href="https://sigilipelli.github.io/server-ops-mastery-path/">🖥️ Server Ops</a>
+  <a href="https://sigilipelli.github.io/nodemcu-mastery-path/">📶 NodeMCU/IoT</a>
+  <a href="https://sigilipelli.github.io/terraform-mastery-path/">🌍 Terraform</a>
+  <a href="https://sigilipelli.github.io/kubernetes-mastery-path/">☸️ Kubernetes</a>
+  <a href="https://sigilipelli.github.io/docker-mastery-path/">🐳 Docker</a>
+  <a href="https://sigilipelli.github.io/github-mastery-path/">🐙 GitHub & Git</a>
+</div>
+</div>
+
