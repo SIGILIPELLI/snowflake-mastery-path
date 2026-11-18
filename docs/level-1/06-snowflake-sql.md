@@ -6,7 +6,7 @@ description: "Snowflake SQL that saves work: QUALIFY, window functions, GROUP BY
 
 Snowflake speaks standard ANSI SQL with a set of extensions that make analytical queries shorter and clearer. This
 lesson covers the ones you'll use weekly, on the orders and customers loaded in lesson 05. It assumes you know joins and
-`GROUP BY`. The [SQL Mastery Path](https://sigilipelli.github.io/sql-mastery-path/) covers those.
+`GROUP BY`. The [SQL Mastery Path](https://learnmasterypath.com/sql-mastery-path/) covers those.
 
 !!! note "Where the results come from"
     The statements below are Snowflake SQL. Their **results** were produced by running the same queries on the same

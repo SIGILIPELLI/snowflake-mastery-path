@@ -19,7 +19,7 @@ quarter of your customers, why a permanent table rewritten nightly holds nine ti
     Snowflake. A free trial account is enough to run every exercise yourself.
 
 **Prerequisites:** comfortable with SQL (joins, `GROUP BY`; see the
-[SQL Mastery Path](https://sigilipelli.github.io/sql-mastery-path/)) and basic Python for the client and project lessons.
+[SQL Mastery Path](https://learnmasterypath.com/sql-mastery-path/)) and basic Python for the client and project lessons.
 
 ## Modules
 

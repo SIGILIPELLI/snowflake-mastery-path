@@ -1,6 +1,6 @@
 site_name: Snowflake Mastery Path
 site_description: A free Snowflake course — architecture, virtual warehouses, loading data, semi-structured data, Time Travel, micro-partitions and clustering, Snowpipe, streams, tasks, dynamic tables, governance, data sharing, Snowpark, Cortex and cost control.
-site_url: https://sigilipelli.github.io/snowflake-mastery-path/
+site_url: https://learnmasterypath.com/snowflake-mastery-path/
 repo_url: https://github.com/sigilipelli/snowflake-mastery-path
 repo_name: snowflake-mastery-path
 

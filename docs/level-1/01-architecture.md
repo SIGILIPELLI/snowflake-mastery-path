@@ -119,12 +119,12 @@ they say so. A trial account typically lets you choose an edition.
 Snowflake is built for **analytics**: large scans, aggregations and joins over historical data, many concurrent
 readers, and batch or micro-batch loading. It's a poor fit as the primary database behind an application that does
 thousands of single-row inserts and updates per second. Use PostgreSQL (see the
-[PostgreSQL Mastery Path](https://sigilipelli.github.io/postgresql-mastery-path/)) or similar, and load Snowflake from
+[PostgreSQL Mastery Path](https://learnmasterypath.com/postgresql-mastery-path/)) or similar, and load Snowflake from
 it. (Snowflake does offer hybrid tables for row-oriented workloads. They're out of scope here.)
 
 This course assumes you know SQL. If `JOIN`, `GROUP BY` and window functions are new to you, start with the
-[SQL Mastery Path](https://sigilipelli.github.io/sql-mastery-path/). Python appears in the Snowpark and connector
-lessons, and the [Python Mastery Path](https://sigilipelli.github.io/python-mastery-path/) covers what you need.
+[SQL Mastery Path](https://learnmasterypath.com/sql-mastery-path/). Python appears in the Snowpark and connector
+lessons, and the [Python Mastery Path](https://learnmasterypath.com/python-mastery-path/) covers what you need.
 
 ## How It Actually Works
 

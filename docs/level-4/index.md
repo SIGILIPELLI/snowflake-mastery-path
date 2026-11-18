@@ -47,6 +47,6 @@ revenue, and translated SQL that compiles but returns different answers.
 ## After Level 4
 
 You've covered Snowflake from architecture to operations. Good next steps: run the capstone in a trial account with your
-own workloads, take the [dbt and data engineering](https://sigilipelli.github.io/data-engineering-mastery-path/) path
-further, or pair this course with the [PySpark Mastery Path](https://sigilipelli.github.io/pyspark-mastery-path/) to
+own workloads, take the [dbt and data engineering](https://learnmasterypath.com/data-engineering-mastery-path/) path
+further, or pair this course with the [PySpark Mastery Path](https://learnmasterypath.com/pyspark-mastery-path/) to
 compare the two platforms on the same pipeline.
