@@ -21,7 +21,7 @@ you can retake it as many times as you like. Your best result is saved in this b
       "a,30,15,2; b,5,5,1"
     ],
     "correctIndex": 3,
-    "explanation": "Grouped aggregates; the same in Snowflake. Verified by running the standard-SQL part on PostgreSQL 18 (rows comma-separated, separated by semicolons); Snowflake itself was not available, so Snowflake-only syntax is not run here."
+    "explanation": "Grouped aggregates; the same in Snowflake. The standard-SQL part was run on PostgreSQL 18 and its output checked; Snowflake itself was not used, so any Snowflake-only syntax is untested here."
   },
   {
     "question": "What does this window query return?\n```sql\ncreate table t(d int, v int); insert into t values (1,10),(2,20),(3,30);\n\nselect d, sum(v) over (order by d) running, lag(v) over (order by d) prev from t order by d;\n```\n",
@@ -32,7 +32,7 @@ you can retake it as many times as you like. Your best result is saved in this b
       "1,10,; 2,30,10; 3,60,"
     ],
     "correctIndex": 1,
-    "explanation": "A running sum and the previous row's value (NULL first). Verified by running the standard-SQL part on PostgreSQL 18 (rows comma-separated, separated by semicolons); Snowflake itself was not available, so Snowflake-only syntax is not run here."
+    "explanation": "A running sum and the previous row's value (NULL first). The standard-SQL part was run on PostgreSQL 18 and its output checked; Snowflake itself was not used, so any Snowflake-only syntax is untested here."
   },
   {
     "question": "What does this NULL-handling query return?\n```sql\ncreate table t(x int); insert into t values (1),(null),(3);\n\nselect count(*), count(x), sum(x), coalesce(max(x),0), avg(x)::numeric(3,1) from t;\n```\n",
@@ -43,7 +43,7 @@ you can retake it as many times as you like. Your best result is saved in this b
       "3,2,4,3,2.0"
     ],
     "correctIndex": 3,
-    "explanation": "NULLs are ignored by aggregates; count(*) counts rows. Verified by running the standard-SQL part on PostgreSQL 18 (rows comma-separated, separated by semicolons); Snowflake itself was not available, so Snowflake-only syntax is not run here."
+    "explanation": "NULLs are ignored by aggregates; count(*) counts rows. The standard-SQL part was run on PostgreSQL 18 and its output checked; Snowflake itself was not used, so any Snowflake-only syntax is untested here."
   },
   {
     "question": "A table is 500 micro-partitions and your filter touches 20. What does pruning mean for cost?",
@@ -76,7 +76,7 @@ you can retake it as many times as you like. Your best result is saved in this b
       "1.0"
     ],
     "correctIndex": 0,
-    "explanation": "Rate x hours. Verified by running it."
+    "explanation": "Rate x hours. (Any standard SQL here was run on PostgreSQL 18; Snowflake itself was not used.)"
   },
   {
     "question": "Which cache can answer an identical repeated query without using a warehouse?",
