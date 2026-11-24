@@ -1,0 +1,4227 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="180 Snowflake interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Snowflake Mastery Path.">
+      
+      
+      
+        <link rel="canonical" href="https://learnmasterypath.com/snowflake-mastery-path/interview-questions/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../cheat-sheet/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+  
+  <title>Snowflake Interview Questions and Answers (180 Questions)</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/progress-tracker.css">
+    
+      <link rel="stylesheet" href="../stylesheets/final-quiz.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05VBGCXN12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-05VBGCXN12');
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mastery Path">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Snowflake Interview Questions and Answers (180 Questions)">
+  <meta property="og:description" content="180 Snowflake interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Snowflake Mastery Path.">
+  <meta property="og:url" content="https://learnmasterypath.com/snowflake-mastery-path/interview-questions/">
+  <meta property="og:image" content="https://learnmasterypath.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mastery Path: free structured courses, beginner to master">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Snowflake Interview Questions and Answers (180 Questions)">
+  <meta name="twitter:description" content="180 Snowflake interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Snowflake Mastery Path.">
+  <meta name="twitter:image" content="https://learnmasterypath.com/og-image.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9440969811959397"
+     crossorigin="anonymous"></script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Mastery Path", "item": "https://learnmasterypath.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Snowflake Mastery Path", "item": "https://learnmasterypath.com/snowflake-mastery-path/"},
+      {"@type": "ListItem", "position": 3, "name": "Interview Questions", "item": "https://learnmasterypath.com/snowflake-mastery-path/interview-questions/"}
+    ]
+  }
+  </script>
+  <style>
+    .md-banner a:hover { text-decoration: underline !important; }
+    .mp-related { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--md-default-fg-color--lightest); font-size: .78rem; }
+    .mp-related h2 { font-size: .9rem; margin: 0 0 .5rem; }
+    .mp-related ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem .9rem; }
+    .mp-related li { margin: 0 !important; }
+  </style>
+  <script type="application/json" id="mp-course-meta">{"home": false, "id": "snowflake-mastery-path", "name": "Snowflake Mastery Path", "repo": "https://github.com/sigilipelli/snowflake-mastery-path", "src": "interview-questions.md", "url": "https://learnmasterypath.com/snowflake-mastery-path/"}</script>
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/learn.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/course.css?v=1">
+  <script src="https://learnmasterypath.com/assets/learn.js" defer></script>
+  <script src="https://learnmasterypath.com/assets/signup.js" defer></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#snowflake-interview-questions-and-answers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <a href="https://learnmasterypath.com/" style="color: inherit; text-decoration: none;">
+    &larr; Mastery Path &middot; all 100+ free courses
+  </a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/search/" style="color: inherit; text-decoration: none;">Search all courses</a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/resume/" style="color: inherit; font-weight: 700; text-decoration: none;">
+    Got the skills? Free resume ATS check &rarr;
+  </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Snowflake Mastery Path" class="md-header__button md-logo" aria-label="Snowflake Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Snowflake Mastery Path
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Snowflake Interview Questions and Answers (180 Questions)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="light-blue" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sigilipelli/snowflake-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    snowflake-mastery-path
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Interview Questions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../cheat-sheet/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cheat Sheet
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 1 · Snowflake Foundations
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 2 · Performance & Data Engineering
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-3/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 3 · Security, Governance & Sharing
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-4/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 4 · Development, Cost & Operations
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quiz/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Final Quiz
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Snowflake Mastery Path" class="md-nav__button md-logo" aria-label="Snowflake Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    Snowflake Mastery Path
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sigilipelli/snowflake-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    snowflake-mastery-path
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-snowflake-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Snowflake Foundations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Snowflake Foundations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-how-snowflake-is-built-storage-compute-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · How Snowflake Is Built: Storage, Compute &amp; Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-accounts-snowsight-snowflake-cli-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Accounts, Snowsight, Snowflake CLI &amp; Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-databases-schemas-tables-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Databases, Schemas, Tables &amp; Data Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-virtual-warehouses-sizing-suspend-credits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Virtual Warehouses: Sizing, Suspend &amp; Credits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-loading-data-stages-file-formats-copy-into" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Loading Data: Stages, File Formats &amp; COPY INTO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-snowflake-sql-windows-qualify-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Snowflake SQL: Windows, QUALIFY &amp; Extensions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-semi-structured-data-variant-flatten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Semi-Structured Data: VARIANT &amp; FLATTEN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-time-travel-undrop-fail-safe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Time Travel, UNDROP &amp; Fail-safe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-zero-copy-cloning-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Zero-Copy Cloning &amp; Environments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-load-analyse-a-sales-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — Load &amp; Analyse a Sales Dataset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-performance-data-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Performance &amp; Data Engineering
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Performance &amp; Data Engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-micro-partitions-pruning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Micro-Partitions &amp; Pruning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-clustering-keys-automatic-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Clustering Keys &amp; Automatic Clustering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-query-profile-performance-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Query Profile &amp; Performance Tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-the-three-caches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · The Three Caches
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-continuous-loading-with-snowpipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Continuous Loading with Snowpipe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-streams-change-data-capture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Streams: Change Data Capture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-tasks-task-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Tasks &amp; Task Graphs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-dynamic-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Dynamic Tables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-unloading-external-tables-iceberg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Unloading, External Tables &amp; Iceberg
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-an-incremental-elt-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — An Incremental ELT Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-security-governance-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Security, Governance &amp; Sharing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Security, Governance &amp; Sharing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-access-control-roles-privileges-hierarchies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Access Control: Roles, Privileges &amp; Hierarchies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-authentication-mfa-key-pairs-oauth-sso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Authentication: MFA, Key Pairs, OAuth &amp; SSO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-network-policies-private-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Network Policies &amp; Private Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-masking-row-access-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Masking &amp; Row Access Policies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-object-tagging-data-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Object Tagging &amp; Data Classification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-secure-views-secure-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Secure Views &amp; Secure Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-secure-data-sharing-the-marketplace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Secure Data Sharing &amp; the Marketplace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-encryption-key-management-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Encryption, Key Management &amp; Compliance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-auditing-with-account_usage-access-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Auditing with ACCOUNT_USAGE &amp; Access History
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-governed-multi-team-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Governed Multi-Team Platform
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-building-scaling-operating" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Building, Scaling &amp; Operating
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Building, Scaling &amp; Operating">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-udfs-stored-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · UDFs &amp; Stored Procedures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-snowpark-for-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Snowpark for Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-python-udfs-vectorized-udfs-udtfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Python UDFs, Vectorized UDFs &amp; UDTFs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-cortex-ai-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Cortex AI Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-cost-management-monitors-budgets-attribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Cost Management: Monitors, Budgets &amp; Attribution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-warehouse-scaling-up-out-adaptive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Warehouse Scaling: Up, Out &amp; Adaptive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-replication-failover-business-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Replication, Failover &amp; Business Continuity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-dbt-cicd-for-snowflake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · dbt &amp; CI/CD for Snowflake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-migrating-to-snowflake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Migrating to Snowflake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-a-cost-aware-data-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone — A Cost-Aware Data Platform
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sales-analytics-with-window-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sales analytics with window functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#an-idempotent-change-capture-upsert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        An idempotent change-capture upsert
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheat-sheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheat Sheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 · Snowflake Foundations
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 · Snowflake Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/01-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · How Snowflake Is Built: Storage, Compute & Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/02-accounts-and-clients/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Accounts, Snowsight, Snowflake CLI & Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/03-objects-and-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Databases, Schemas, Tables & Data Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/04-virtual-warehouses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Virtual Warehouses: Sizing, Suspend & Credits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/05-loading-copy-into/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Loading Data: Stages, File Formats & COPY INTO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/06-snowflake-sql/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Snowflake SQL: Windows, QUALIFY & Extensions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/07-semi-structured/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Semi-Structured Data: VARIANT & FLATTEN
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/08-time-travel-failsafe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Time Travel, UNDROP & Fail-safe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/09-zero-copy-cloning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Zero-Copy Cloning & Environments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/10-project-sales-analytics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — Load & Analyse a Sales Dataset
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-2/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 · Performance & Data Engineering
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 · Performance & Data Engineering
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/01-micro-partitions-pruning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Micro-Partitions & Pruning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/02-clustering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Clustering Keys & Automatic Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/03-query-profile-tuning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Query Profile & Performance Tuning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/04-caching-layers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · The Three Caches
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/05-snowpipe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Continuous Loading with Snowpipe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/06-streams-cdc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Streams: Change Data Capture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/07-tasks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Tasks & Task Graphs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/08-dynamic-tables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Dynamic Tables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/09-unloading-iceberg/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Unloading, External Tables & Iceberg
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/10-project-incremental-pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — An Incremental ELT Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 · Security, Governance & Sharing
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 · Security, Governance & Sharing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/01-rbac/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Access Control: Roles, Privileges & Hierarchies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/02-authentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Authentication: MFA, Key Pairs, OAuth & SSO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/03-network-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Network Policies & Private Connectivity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/04-masking-row-access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Masking & Row Access Policies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/05-tags-classification/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Object Tagging & Data Classification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/06-secure-views-udfs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Secure Views & Secure Functions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/07-data-sharing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Secure Data Sharing & the Marketplace
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/08-encryption-compliance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Encryption, Key Management & Compliance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/09-auditing-account-usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Auditing with ACCOUNT_USAGE & Access History
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/10-project-governed-platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Governed Multi-Team Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 · Development, Cost & Operations
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 · Development, Cost & Operations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/01-udfs-procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · SQL UDFs, Snowflake Scripting & Procedures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/02-snowpark-python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Snowpark for Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/03-python-udfs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Python UDFs, UDTFs & Vectorized UDFs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/04-cortex-ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Cortex AI Functions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/05-cost-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Cost Management: Credits, Monitors & Budgets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/06-warehouse-scaling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Scaling: Multi-Cluster, Query Acceleration & Gen2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/07-replication-bcdr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Replication, Failover & Business Continuity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/08-dbt-cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · dbt, Snowflake CLI & CI/CD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/09-migration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Migrating to Snowflake
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/10-capstone-cost-aware-platform/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Capstone — A Cost-Aware Analytics Platform
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Final Quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-snowflake-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Snowflake Foundations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Snowflake Foundations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-how-snowflake-is-built-storage-compute-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · How Snowflake Is Built: Storage, Compute &amp; Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-accounts-snowsight-snowflake-cli-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Accounts, Snowsight, Snowflake CLI &amp; Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-databases-schemas-tables-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Databases, Schemas, Tables &amp; Data Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-virtual-warehouses-sizing-suspend-credits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Virtual Warehouses: Sizing, Suspend &amp; Credits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-loading-data-stages-file-formats-copy-into" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Loading Data: Stages, File Formats &amp; COPY INTO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-snowflake-sql-windows-qualify-extensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Snowflake SQL: Windows, QUALIFY &amp; Extensions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-semi-structured-data-variant-flatten" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Semi-Structured Data: VARIANT &amp; FLATTEN
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-time-travel-undrop-fail-safe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Time Travel, UNDROP &amp; Fail-safe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-zero-copy-cloning-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Zero-Copy Cloning &amp; Environments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-load-analyse-a-sales-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — Load &amp; Analyse a Sales Dataset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-performance-data-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Performance &amp; Data Engineering
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Performance &amp; Data Engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-micro-partitions-pruning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Micro-Partitions &amp; Pruning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-clustering-keys-automatic-clustering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Clustering Keys &amp; Automatic Clustering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-query-profile-performance-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Query Profile &amp; Performance Tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-the-three-caches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · The Three Caches
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-continuous-loading-with-snowpipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Continuous Loading with Snowpipe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-streams-change-data-capture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Streams: Change Data Capture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-tasks-task-graphs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Tasks &amp; Task Graphs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-dynamic-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Dynamic Tables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-unloading-external-tables-iceberg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Unloading, External Tables &amp; Iceberg
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-an-incremental-elt-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — An Incremental ELT Pipeline
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-security-governance-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Security, Governance &amp; Sharing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Security, Governance &amp; Sharing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-access-control-roles-privileges-hierarchies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Access Control: Roles, Privileges &amp; Hierarchies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-authentication-mfa-key-pairs-oauth-sso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Authentication: MFA, Key Pairs, OAuth &amp; SSO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-network-policies-private-connectivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Network Policies &amp; Private Connectivity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-masking-row-access-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Masking &amp; Row Access Policies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-object-tagging-data-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Object Tagging &amp; Data Classification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-secure-views-secure-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Secure Views &amp; Secure Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-secure-data-sharing-the-marketplace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Secure Data Sharing &amp; the Marketplace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-encryption-key-management-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Encryption, Key Management &amp; Compliance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-auditing-with-account_usage-access-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Auditing with ACCOUNT_USAGE &amp; Access History
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-governed-multi-team-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Governed Multi-Team Platform
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-building-scaling-operating" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Building, Scaling &amp; Operating
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Building, Scaling &amp; Operating">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-udfs-stored-procedures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · UDFs &amp; Stored Procedures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-snowpark-for-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Snowpark for Python
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-python-udfs-vectorized-udfs-udtfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Python UDFs, Vectorized UDFs &amp; UDTFs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-cortex-ai-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Cortex AI Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-cost-management-monitors-budgets-attribution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Cost Management: Monitors, Budgets &amp; Attribution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-warehouse-scaling-up-out-adaptive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Warehouse Scaling: Up, Out &amp; Adaptive
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-replication-failover-business-continuity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Replication, Failover &amp; Business Continuity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-dbt-cicd-for-snowflake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · dbt &amp; CI/CD for Snowflake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-migrating-to-snowflake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Migrating to Snowflake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-a-cost-aware-data-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone — A Cost-Aware Data Platform
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sales-analytics-with-window-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sales analytics with window functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#an-idempotent-change-capture-upsert" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        An idempotent change-capture upsert
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+<h1 id="snowflake-interview-questions-and-answers">Snowflake Interview Questions and Answers<a class="headerlink" href="#snowflake-interview-questions-and-answers" title="Permanent link">&para;</a></h1>
+<p><strong>180 questions</strong> with the correct answer and a short explanation, organised from beginner (Level 1) to advanced (Level 4). Every question comes from a lesson in the free Snowflake Mastery Path, so you can open the lesson to go deeper.</p>
+<div class="admonition tip">
+<p class="admonition-title">Practise, don't just read</p>
+<p>Each lesson also ends with an interactive quiz, and the <a href="../quiz/">final quiz</a> tests all four levels. Try to answer each question below before reading the answer.</p>
+</div>
+<h2 id="level-1-snowflake-foundations">Level 1 · Snowflake Foundations<a class="headerlink" href="#level-1-snowflake-foundations" title="Permanent link">&para;</a></h2>
+<h3 id="01-how-snowflake-is-built-storage-compute-services"><a href="../level-1/01-architecture/">01 · How Snowflake Is Built: Storage, Compute &amp; Services</a><a class="headerlink" href="#01-how-snowflake-is-built-storage-compute-services" title="Permanent link">&para;</a></h3>
+<p><strong>Q1.</strong> What are Snowflake's three architecture layers?</p>
+<p><strong>Answer:</strong> Storage, compute (virtual warehouses) and cloud services</p>
+<p>Storage and compute scale independently.</p>
+<p><strong>Q2.</strong> What is the practical benefit of separating storage from compute?</p>
+<p><strong>Answer:</strong> Several warehouses can query the same data at once without competing, and each can be sized and suspended independently</p>
+<p>Workload isolation.</p>
+<p><strong>Q3.</strong> What does the cloud services layer handle?</p>
+<p><strong>Answer:</strong> Authentication, metadata, query parsing and optimisation, and access control</p>
+<p>It coordinates the platform.</p>
+<p><strong>Q4.</strong> What kind of storage format does Snowflake use internally?</p>
+<p><strong>Answer:</strong> Compressed, columnar micro-partitions managed by Snowflake</p>
+<p>You do not manage files.</p>
+<h3 id="02-accounts-snowsight-snowflake-cli-python"><a href="../level-1/02-accounts-and-clients/">02 · Accounts, Snowsight, Snowflake CLI &amp; Python</a><a class="headerlink" href="#02-accounts-snowsight-snowflake-cli-python" title="Permanent link">&para;</a></h3>
+<p><strong>Q5.</strong> What is a Snowflake account identifier made of?</p>
+<p><strong>Answer:</strong> An organisation and account name (or locator plus region/cloud) that forms the account URL</p>
+<p>Used by drivers and the web UI.</p>
+<p><strong>Q6.</strong> Which client is the browser interface?</p>
+<p><strong>Answer:</strong> Snowsight</p>
+<p>SnowSQL is the older command-line client; the Snowflake CLI is newer.</p>
+<p><strong>Q7.</strong> Why prefer key-pair or SSO authentication for services?</p>
+<p><strong>Answer:</strong> No shared passwords, and credentials can be rotated or revoked centrally</p>
+<p>Service users should not use passwords.</p>
+<p><strong>Q8.</strong> What does a driver connection need at minimum?</p>
+<p><strong>Answer:</strong> Account identifier, user, authenticator or credentials, and a role/warehouse for queries</p>
+<p>Set default role and warehouse.</p>
+<h3 id="03-databases-schemas-tables-data-types"><a href="../level-1/03-objects-and-types/">03 · Databases, Schemas, Tables &amp; Data Types</a><a class="headerlink" href="#03-databases-schemas-tables-data-types" title="Permanent link">&para;</a></h3>
+<p><strong>Q9.</strong> What is the object hierarchy for tables?</p>
+<p><strong>Answer:</strong> Account &gt; database &gt; schema &gt; table</p>
+<p>Fully qualified names are db.schema.object.</p>
+<p><strong>Q10.</strong> Which type stores JSON documents?</p>
+<p><strong>Answer:</strong> VARIANT</p>
+<p>Also OBJECT and ARRAY.</p>
+<p><strong>Q11.</strong> What is a transient table?</p>
+<p><strong>Answer:</strong> A table with no Fail-safe period and at most 1 day of Time Travel, cheaper for staging data</p>
+<p>Persists until dropped, unlike a temporary table.</p>
+<p><strong>Q12.</strong> What does a temporary table do?</p>
+<p><strong>Answer:</strong> Exists only for the session and is dropped when it ends</p>
+<p>Good for intermediate results.</p>
+<h3 id="04-virtual-warehouses-sizing-suspend-credits"><a href="../level-1/04-virtual-warehouses/">04 · Virtual Warehouses: Sizing, Suspend &amp; Credits</a><a class="headerlink" href="#04-virtual-warehouses-sizing-suspend-credits" title="Permanent link">&para;</a></h3>
+<p><strong>Q13.</strong> A Medium warehouse (4 credits/hour) runs for 90 minutes. How many credits are used?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">print</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mf">1.5</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 6.0</p>
+<p>Credits = rate per hour x hours (per-second billing, 60-second minimum per resume). (Any standard SQL here was run on PostgreSQL 18; Snowflake itself was not used.)</p>
+<p><strong>Q14.</strong> Warehouse sizes double their credit rate each step: XS=1, S=2, M=4, L=8. How many credits per hour for an XL?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="mi">2</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 16</p>
+<p>XL is four doublings from XS. (Any standard SQL here was run on PostgreSQL 18; Snowflake itself was not used.)</p>
+<p><strong>Q15.</strong> What happens to billing when a warehouse is suspended?</p>
+<p><strong>Answer:</strong> Compute credits stop accruing (storage is billed separately)</p>
+<p>Use auto-suspend.</p>
+<p><strong>Q16.</strong> When is a larger warehouse most likely to help?</p>
+<p><strong>Answer:</strong> For a single large, complex query that benefits from more compute, not for many small concurrent queries</p>
+<p>Concurrency is addressed with multi-cluster warehouses.</p>
+<h3 id="05-loading-data-stages-file-formats-copy-into"><a href="../level-1/05-loading-copy-into/">05 · Loading Data: Stages, File Formats &amp; COPY INTO</a><a class="headerlink" href="#05-loading-data-stages-file-formats-copy-into" title="Permanent link">&para;</a></h3>
+<p><strong>Q17.</strong> What does COPY INTO &lt;table&gt; FROM @stage do?</p>
+<p><strong>Answer:</strong> Bulk-loads staged files into a table using a file format</p>
+<p>Tracks loaded files to avoid reloading.</p>
+<p><strong>Q18.</strong> What is a stage?</p>
+<p><strong>Answer:</strong> A named location (internal or external) where files are kept for loading and unloading</p>
+<p>@~, @%table and named stages.</p>
+<p><strong>Q19.</strong> What does ON_ERROR = CONTINUE do in COPY INTO?</p>
+<p><strong>Answer:</strong> Loads valid rows and skips rows with errors instead of aborting</p>
+<p>Check the load results.</p>
+<p><strong>Q20.</strong> How does Snowflake avoid loading the same file twice?</p>
+<p><strong>Answer:</strong> Load metadata tracks file names and ETags for about 64 days</p>
+<p>FORCE = TRUE overrides it.</p>
+<h3 id="06-snowflake-sql-windows-qualify-extensions"><a href="../level-1/06-snowflake-sql/">06 · Snowflake SQL: Windows, QUALIFY &amp; Extensions</a><a class="headerlink" href="#06-snowflake-sql-windows-qualify-extensions" title="Permanent link">&para;</a></h3>
+<p><strong>Q21.</strong> What does this standard SQL, which also runs on Snowflake, return?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">o</span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="nb">int</span><span class="p">,</span><span class="w"> </span><span class="n">cust</span><span class="w"> </span><span class="nb">text</span><span class="p">,</span><span class="w"> </span><span class="n">amt</span><span class="w"> </span><span class="nb">numeric</span><span class="p">);</span><span class="w"> </span><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="k">values</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'a'</span><span class="p">,</span><span class="mi">10</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'b'</span><span class="p">,</span><span class="mi">20</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">'a'</span><span class="p">,</span><span class="mi">30</span><span class="p">),(</span><span class="mi">4</span><span class="p">,</span><span class="s1">'b'</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">select</span><span class="w"> </span><span class="n">cust</span><span class="p">,</span><span class="w"> </span><span class="k">sum</span><span class="p">(</span><span class="n">amt</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">total</span><span class="p">,</span><span class="w"> </span><span class="n">row_number</span><span class="p">()</span><span class="w"> </span><span class="n">over</span><span class="w"> </span><span class="p">(</span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="k">sum</span><span class="p">(</span><span class="n">amt</span><span class="p">)</span><span class="w"> </span><span class="k">desc</span><span class="p">)</span><span class="w"> </span><span class="n">rn</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">cust</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">rn</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>Answer:</strong> a,40,1; b,25,2</p>
+<p>Aggregates inside window ordering work the same in both systems. The standard-SQL part was run on PostgreSQL 18 and its output checked; Snowflake itself was not used, so any Snowflake-only syntax is untested here.</p>
+<p><strong>Q22.</strong> What does QUALIFY do in Snowflake SQL?</p>
+<p><strong>Answer:</strong> Filters the results of window functions, like HAVING does for aggregates</p>
+<p>Other engines need a subquery.</p>
+<p><strong>Q23.</strong> Which function parses a string into a date in Snowflake?</p>
+<p><strong>Answer:</strong> TO_DATE (or TRY_TO_DATE to return NULL on failure)</p>
+<p>TRY_ functions avoid errors on bad data.</p>
+<p><strong>Q24.</strong> What does this return (the same logic as Snowflake's IFF/NVL)?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">t</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="nb">int</span><span class="p">);</span><span class="w"> </span><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="k">values</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">),(</span><span class="k">null</span><span class="p">),(</span><span class="mi">3</span><span class="p">);</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">select</span><span class="w"> </span><span class="k">sum</span><span class="p">(</span><span class="k">coalesce</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="mi">0</span><span class="p">)),</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">t</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 4,2,3</p>
+<p>count(x) ignores NULL; count(*) does not. The standard-SQL part was run on PostgreSQL 18 and its output checked; Snowflake itself was not used, so any Snowflake-only syntax is untested here.</p>
+<h3 id="07-semi-structured-data-variant-flatten"><a href="../level-1/07-semi-structured/">07 · Semi-Structured Data: VARIANT &amp; FLATTEN</a><a class="headerlink" href="#07-semi-structured-data-variant-flatten" title="Permanent link">&para;</a></h3>
+<p><strong>Q25.</strong> Which syntax reads a JSON field in Snowflake?</p>
+<p><strong>Answer:</strong> col:path.field::type (for example v:user.name::string)</p>
+<p>Colon traverses, double-colon casts.</p>
+<p><strong>Q26.</strong> What does FLATTEN do?</p>
+<p><strong>Answer:</strong> Expands an array or object into rows (used with LATERAL)</p>
+<p>Use for nested arrays.</p>
+<p><strong>Q27.</strong> Why cast values from VARIANT?</p>
+<p><strong>Answer:</strong> Values are typed as VARIANT and compare/aggregate better after ::string or ::number</p>
+<p>Avoid implicit surprises.</p>
+<p><strong>Q28.</strong> What does this JSON-style extraction return in standard PostgreSQL (the idea Snowflake does with :)?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">e</span><span class="p">(</span><span class="n">v</span><span class="w"> </span><span class="n">jsonb</span><span class="p">);</span><span class="w"> </span><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">e</span><span class="w"> </span><span class="k">values</span><span class="w"> </span><span class="p">(</span><span class="s1">'{"user":{"name":"Ana"},"items":[1,2,3]}'</span><span class="p">);</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">select</span><span class="w"> </span><span class="n">v</span><span class="o">-&gt;</span><span class="s1">'user'</span><span class="o">-&gt;&gt;</span><span class="s1">'name'</span><span class="p">,</span><span class="w"> </span><span class="n">jsonb_array_length</span><span class="p">(</span><span class="n">v</span><span class="o">-&gt;</span><span class="s1">'items'</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">e</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>Answer:</strong> Ana,3</p>
+<p>Path access plus array length; Snowflake uses v:user.name::string and ARRAY_SIZE(v:items). The standard-SQL part was run on PostgreSQL 18 and its output checked; Snowflake itself was not used, so any Snowflake-only syntax is untested here.</p>
+<h3 id="08-time-travel-undrop-fail-safe"><a href="../level-1/08-time-travel-failsafe/">08 · Time Travel, UNDROP &amp; Fail-safe</a><a class="headerlink" href="#08-time-travel-undrop-fail-safe" title="Permanent link">&para;</a></h3>
+<p><strong>Q29.</strong> What is Time Travel?</p>
+<p><strong>Answer:</strong> Querying or restoring data as it was within a retention period (for example AT or BEFORE, UNDROP)</p>
+<p>Standard edition default is 1 day; Enterprise can extend up to 90.</p>
+<p><strong>Q30.</strong> What is Fail-safe?</p>
+<p><strong>Answer:</strong> A non-configurable 7-day recovery period after Time Travel ends, accessible only through Snowflake support</p>
+<p>Not for routine recovery.</p>
+<p><strong>Q31.</strong> How do you undo an accidental DROP TABLE within retention?</p>
+<p><strong>Answer:</strong> UNDROP TABLE name</p>
+<p>Also UNDROP SCHEMA and DATABASE.</p>
+<p><strong>Q32.</strong> A table has 1 day Time Travel plus 7 days Fail-safe. How many days after deletion can Snowflake still potentially recover the data?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">7</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 8</p>
+<p>Only the Time Travel part is self-service. (Any standard SQL here was run on PostgreSQL 18; Snowflake itself was not used.)</p>
+<h3 id="09-zero-copy-cloning-environments"><a href="../level-1/09-zero-copy-cloning/">09 · Zero-Copy Cloning &amp; Environments</a><a class="headerlink" href="#09-zero-copy-cloning-environments" title="Permanent link">&para;</a></h3>
+<p><strong>Q33.</strong> What does CREATE TABLE ... CLONE copy?</p>
+<p><strong>Answer:</strong> Metadata only at first, sharing the underlying micro-partitions (zero-copy)</p>
+<p>Storage grows only as the clone diverges.</p>
+<p><strong>Q34.</strong> What are common uses for clones?</p>
+<p><strong>Answer:</strong> Dev/test copies, safe experiments and point-in-time snapshots</p>
+<p>Cheap and fast.</p>
+<p><strong>Q35.</strong> What happens to a source table when you change the clone?</p>
+<p><strong>Answer:</strong> The source is unchanged; modified data is stored separately</p>
+<p>Copy-on-write.</p>
+<p><strong>Q36.</strong> Can you clone using Time Travel?</p>
+<p><strong>Answer:</strong> Yes, with AT/BEFORE to clone a past state</p>
+<p>Within retention.</p>
+<h3 id="10-project-load-analyse-a-sales-dataset"><a href="../level-1/10-project-sales-analytics/">10 · Project — Load &amp; Analyse a Sales Dataset</a><a class="headerlink" href="#10-project-load-analyse-a-sales-dataset" title="Permanent link">&para;</a></h3>
+<p><strong>Q37.</strong> What does the sales analytics project practise?</p>
+<p><strong>Answer:</strong> Loading, modelling and querying data end to end with warehouses, stages and SQL analytics</p>
+<p>Level 1 capstone.</p>
+<p><strong>Q38.</strong> Which query finds each customer's latest order (a typical analytics pattern)?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">o</span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="nb">int</span><span class="p">,</span><span class="w"> </span><span class="n">cust</span><span class="w"> </span><span class="nb">text</span><span class="p">,</span><span class="w"> </span><span class="n">ts</span><span class="w"> </span><span class="nb">date</span><span class="p">);</span><span class="w"> </span><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">o</span><span class="w"> </span><span class="k">values</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'a'</span><span class="p">,</span><span class="s1">'2026-01-01'</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'a'</span><span class="p">,</span><span class="s1">'2026-02-01'</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">'b'</span><span class="p">,</span><span class="s1">'2026-01-15'</span><span class="p">);</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="k">select</span><span class="w"> </span><span class="n">cust</span><span class="p">,</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="p">(</span><span class="k">select</span><span class="w"> </span><span class="n">cust</span><span class="p">,</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">row_number</span><span class="p">()</span><span class="w"> </span><span class="n">over</span><span class="w"> </span><span class="p">(</span><span class="n">partition</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">cust</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">ts</span><span class="w"> </span><span class="k">desc</span><span class="p">)</span><span class="w"> </span><span class="n">rn</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">o</span><span class="p">)</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">rn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">cust</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>Answer:</strong> a,2; b,3</p>
+<p>In Snowflake you could write this with QUALIFY row_number() = 1. The standard-SQL part was run on PostgreSQL 18 and its output checked; Snowflake itself was not used, so any Snowflake-only syntax is untested here.</p>
+<p><strong>Q39.</strong> Why define a clustering or loading convention early?</p>
+<p><strong>Answer:</strong> Consistent structures keep loads and queries predictable and cheap</p>
+<p>Plan before data grows.</p>
+<p><strong>Q40.</strong> What should you check after loading?</p>
+<p><strong>Answer:</strong> Row counts, rejected rows and sample values</p>
+<p>Reconcile with the source.</p>
+<h2 id="level-2-performance-data-engineering">Level 2 · Performance &amp; Data Engineering<a class="headerlink" href="#level-2-performance-data-engineering" title="Permanent link">&para;</a></h2>
+<h3 id="01-micro-partitions-pruning"><a href="../level-2/01-micro-partitions-pruning/">01 · Micro-Partitions &amp; Pruning</a><a class="headerlink" href="#01-micro-partitions-pruning" title="Permanent link">&para;</a></h3>
+<p><strong>Q41.</strong> What are micro-partitions?</p>
+<p><strong>Answer:</strong> Contiguous units of 50-500 MB (uncompressed) of columnar data, immutable and with metadata on value ranges</p>
+<p>Snowflake maintains them automatically.</p>
+<p><strong>Q42.</strong> What is partition pruning?</p>
+<p><strong>Answer:</strong> Skipping micro-partitions whose min/max metadata shows they cannot match the filter</p>
+<p>Reduces scanned data.</p>
+<p><strong>Q43.</strong> A table has 1,000 micro-partitions and a filter matches data in 25 of them. What fraction is scanned?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">print</span><span class="p">(</span><span class="mi">25</span><span class="o">/</span><span class="mi">1000</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 0.025</p>
+<p>Good pruning scans a small fraction. (Any standard SQL here was run on PostgreSQL 18; Snowflake itself was not used.)</p>
+<p><strong>Q44.</strong> Why does data order affect pruning?</p>
+<p><strong>Answer:</strong> Well-clustered ranges let metadata exclude many partitions; random order spreads values everywhere</p>
+<p>Clustering keys help.</p>
+<h3 id="02-clustering-keys-automatic-clustering"><a href="../level-2/02-clustering/">02 · Clustering Keys &amp; Automatic Clustering</a><a class="headerlink" href="#02-clustering-keys-automatic-clustering" title="Permanent link">&para;</a></h3>
+<p><strong>Q45.</strong> When is a clustering key worth considering?</p>
+<p><strong>Answer:</strong> On large tables with queries that filter or join on a few columns and where pruning is poor</p>
+<p>It costs credits to maintain.</p>
+<p><strong>Q46.</strong> What does SYSTEM$CLUSTERING_INFORMATION tell you?</p>
+<p><strong>Answer:</strong> How well the table is clustered on the given columns (depth and overlap)</p>
+<p>Lower average depth is better.</p>
+<p><strong>Q47.</strong> What is the cost of automatic clustering?</p>
+<p><strong>Answer:</strong> Serverless compute credits for reclustering, plus extra storage</p>
+<p>Measure the benefit.</p>
+<p><strong>Q48.</strong> Which columns suit clustering keys?</p>
+<p><strong>Answer:</strong> Columns frequently used in filters with moderate cardinality (for example a date)</p>
+<p>Very high or very low cardinality is poor.</p>
+<h3 id="03-query-profile-performance-tuning"><a href="../level-2/03-query-profile-tuning/">03 · Query Profile &amp; Performance Tuning</a><a class="headerlink" href="#03-query-profile-performance-tuning" title="Permanent link">&para;</a></h3>
+<p><strong>Q49.</strong> Where do you look for why a query is slow?</p>
+<p><strong>Answer:</strong> The Query Profile (operators, data scanned, spilling, pruning)</p>
+<p>Find the dominant operator.</p>
+<p><strong>Q50.</strong> What does 'spilling to remote storage' indicate?</p>
+<p><strong>Answer:</strong> The warehouse ran out of memory for an operation; a larger warehouse or query rewrite may help</p>
+<p>Local then remote spilling.</p>
+<p><strong>Q51.</strong> What does a poor partitions scanned / total ratio mean?</p>
+<p><strong>Answer:</strong> The filter is not pruning well</p>
+<p>Consider clustering or better predicates.</p>
+<p><strong>Q52.</strong> What is a common cause of exploding joins?</p>
+<p><strong>Answer:</strong> A join on non-unique keys multiplying rows</p>
+<p>Check join cardinality.</p>
+<h3 id="04-the-three-caches"><a href="../level-2/04-caching-layers/">04 · The Three Caches</a><a class="headerlink" href="#04-the-three-caches" title="Permanent link">&para;</a></h3>
+<p><strong>Q53.</strong> What does the result cache do?</p>
+<p><strong>Answer:</strong> Returns an identical, still-valid query result without using a warehouse, for up to 24 hours</p>
+<p>Invalidated by underlying data changes.</p>
+<p><strong>Q54.</strong> What is the warehouse (local disk) cache?</p>
+<p><strong>Answer:</strong> Cached micro-partition data on the warehouse's storage that speeds repeat scans while it runs</p>
+<p>Lost when the warehouse suspends.</p>
+<p><strong>Q55.</strong> What does the metadata cache answer?</p>
+<p><strong>Answer:</strong> Queries such as COUNT(*) or MIN/MAX from metadata without scanning</p>
+<p>Cloud services layer.</p>
+<p><strong>Q56.</strong> Why can aggressive auto-suspend hurt performance?</p>
+<p><strong>Answer:</strong> The local cache is lost on suspend, so the next query re-reads data</p>
+<p>Balance suspend time and cost.</p>
+<h3 id="05-continuous-loading-with-snowpipe"><a href="../level-2/05-snowpipe/">05 · Continuous Loading with Snowpipe</a><a class="headerlink" href="#05-continuous-loading-with-snowpipe" title="Permanent link">&para;</a></h3>
+<p><strong>Q57.</strong> What does Snowpipe do?</p>
+<p><strong>Answer:</strong> Loads files continuously shortly after they arrive in a stage, using serverless compute</p>
+<p>Event driven (auto-ingest) or REST.</p>
+<p><strong>Q58.</strong> How is Snowpipe billed?</p>
+<p><strong>Answer:</strong> Per-second serverless compute plus a small per-file overhead</p>
+<p>Avoid many tiny files.</p>
+<p><strong>Q59.</strong> What is the recommended file size for ingestion?</p>
+<p><strong>Answer:</strong> Roughly 100-250 MB compressed, avoiding very many tiny files</p>
+<p>Balance latency and efficiency.</p>
+<p><strong>Q60.</strong> How can you tell if a pipe loaded a file?</p>
+<p><strong>Answer:</strong> Check COPY_HISTORY or the pipe status functions</p>
+<p>Monitor failures.</p>
+<h3 id="06-streams-change-data-capture"><a href="../level-2/06-streams-cdc/">06 · Streams: Change Data Capture</a><a class="headerlink" href="#06-streams-change-data-capture" title="Permanent link">&para;</a></h3>
+<p><strong>Q61.</strong> What is a Snowflake stream?</p>
+<p><strong>Answer:</strong> An object that records changes (inserts, updates, deletes) to a table since it was last consumed</p>
+<p>Used for change data capture.</p>
+<p><strong>Q62.</strong> Which metadata columns does a stream expose?</p>
+<p><strong>Answer:</strong> METADATA$ACTION, METADATA$ISUPDATE and METADATA$ROW_ID</p>
+<p>An update appears as a delete plus insert with ISUPDATE true.</p>
+<p><strong>Q63.</strong> When does a stream's offset advance?</p>
+<p><strong>Answer:</strong> When it is consumed inside a DML transaction (for example INSERT ... SELECT)</p>
+<p>Plain SELECT does not advance it.</p>
+<p><strong>Q64.</strong> What is a risk of leaving a stream unconsumed?</p>
+<p><strong>Answer:</strong> It can go stale if the source's retention window passes</p>
+<p>Consume regularly.</p>
+<h3 id="07-tasks-task-graphs"><a href="../level-2/07-tasks/">07 · Tasks &amp; Task Graphs</a><a class="headerlink" href="#07-tasks-task-graphs" title="Permanent link">&para;</a></h3>
+<p><strong>Q65.</strong> What is a task?</p>
+<p><strong>Answer:</strong> A scheduled (or triggered) SQL statement or procedure call run by Snowflake</p>
+<p>Schedule via minutes or CRON.</p>
+<p><strong>Q66.</strong> How do you build a dependency chain of tasks?</p>
+<p><strong>Answer:</strong> Use AFTER &lt;predecessor&gt; to form a DAG under a root task</p>
+<p>Resume child tasks before the root.</p>
+<p><strong>Q67.</strong> What does WHEN SYSTEM$STREAM_HAS_DATA('s') do in a task?</p>
+<p><strong>Answer:</strong> Runs the task only if the stream has changes</p>
+<p>Saves credits.</p>
+<p><strong>Q68.</strong> Why must tasks be explicitly resumed?</p>
+<p><strong>Answer:</strong> New tasks are created suspended</p>
+<p>ALTER TASK ... RESUME.</p>
+<h3 id="08-dynamic-tables"><a href="../level-2/08-dynamic-tables/">08 · Dynamic Tables</a><a class="headerlink" href="#08-dynamic-tables" title="Permanent link">&para;</a></h3>
+<p><strong>Q69.</strong> What does a dynamic table do?</p>
+<p><strong>Answer:</strong> Materialises a query's result and keeps it refreshed within a TARGET_LAG</p>
+<p>Declarative pipelines.</p>
+<p><strong>Q70.</strong> What does TARGET_LAG = '5 minutes' mean?</p>
+<p><strong>Answer:</strong> Snowflake tries to keep the data no more than about 5 minutes behind its sources</p>
+<p>A freshness goal.</p>
+<p><strong>Q71.</strong> What is an advantage over streams and tasks?</p>
+<p><strong>Answer:</strong> You declare the result and Snowflake manages refresh, dependencies and incremental logic</p>
+<p>Less plumbing.</p>
+<p><strong>Q72.</strong> When might streams and tasks still be preferable?</p>
+<p><strong>Answer:</strong> When you need fine-grained custom logic or control over processing</p>
+<p>Choose the tool to fit.</p>
+<h3 id="09-unloading-external-tables-iceberg"><a href="../level-2/09-unloading-iceberg/">09 · Unloading, External Tables &amp; Iceberg</a><a class="headerlink" href="#09-unloading-external-tables-iceberg" title="Permanent link">&para;</a></h3>
+<p><strong>Q73.</strong> What does COPY INTO &lt;location&gt; do?</p>
+<p><strong>Answer:</strong> Unloads query results to files in a stage or cloud storage</p>
+<p>Formats include CSV, JSON and Parquet.</p>
+<p><strong>Q74.</strong> Why unload as Parquet?</p>
+<p><strong>Answer:</strong> A compact, columnar, widely supported format for lakes and engines</p>
+<p>Good for sharing with other tools.</p>
+<p><strong>Q75.</strong> What is an Iceberg table in Snowflake?</p>
+<p><strong>Answer:</strong> A table in the open Apache Iceberg format that other engines can also read</p>
+<p>Interoperability.</p>
+<p><strong>Q76.</strong> What is a benefit of open table formats?</p>
+<p><strong>Answer:</strong> Avoid lock-in and let several engines share the same data</p>
+<p>Governance still matters.</p>
+<h3 id="10-project-an-incremental-elt-pipeline"><a href="../level-2/10-project-incremental-pipeline/">10 · Project — An Incremental ELT Pipeline</a><a class="headerlink" href="#10-project-an-incremental-elt-pipeline" title="Permanent link">&para;</a></h3>
+<p><strong>Q77.</strong> What does the incremental pipeline project combine?</p>
+<p><strong>Answer:</strong> Stage and Snowpipe, streams, tasks (or dynamic tables) and merges</p>
+<p>An end-to-end flow.</p>
+<p><strong>Q78.</strong> Which MERGE-style upsert logic is shown here (standard SQL on PostgreSQL)?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">t</span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="nb">int</span><span class="w"> </span><span class="k">primary</span><span class="w"> </span><span class="k">key</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="nb">text</span><span class="p">);</span><span class="w"> </span><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="k">values</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'old'</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'keep'</span><span class="p">);</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">s</span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="nb">int</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="nb">text</span><span class="p">);</span><span class="w"> </span><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="k">values</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'new'</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">'add'</span><span class="p">);</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">conflict</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="k">update</span><span class="w"> </span><span class="k">set</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">excluded</span><span class="p">.</span><span class="n">v</span><span class="p">;</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">id</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 1,new; 2,keep; 3,add</p>
+<p>Snowflake uses MERGE INTO ... WHEN MATCHED ... WHEN NOT MATCHED; PostgreSQL's ON CONFLICT achieves the same upsert. The standard-SQL part was run on PostgreSQL 18 and its output checked; Snowflake itself was not used, so any Snowflake-only syntax is untested here.</p>
+<p><strong>Q79.</strong> Why make the load idempotent?</p>
+<p><strong>Answer:</strong> Re-running after a failure must not duplicate rows</p>
+<p>Use MERGE with keys.</p>
+<p><strong>Q80.</strong> How do you monitor the pipeline?</p>
+<p><strong>Answer:</strong> Task history, pipe status, stream staleness and row-count checks</p>
+<p>Alert on failures.</p>
+<h2 id="level-3-security-governance-sharing">Level 3 · Security, Governance &amp; Sharing<a class="headerlink" href="#level-3-security-governance-sharing" title="Permanent link">&para;</a></h2>
+<h3 id="01-access-control-roles-privileges-hierarchies"><a href="../level-3/01-rbac/">01 · Access Control: Roles, Privileges &amp; Hierarchies</a><a class="headerlink" href="#01-access-control-roles-privileges-hierarchies" title="Permanent link">&para;</a></h3>
+<p><strong>Q81.</strong> What is RBAC in Snowflake?</p>
+<p><strong>Answer:</strong> Privileges are granted to roles and roles are granted to users</p>
+<p>Roles can inherit from roles.</p>
+<p><strong>Q82.</strong> Which system role manages users and roles?</p>
+<p><strong>Answer:</strong> SECURITYADMIN (USERADMIN creates users and roles)</p>
+<p>SYSADMIN owns objects.</p>
+<p><strong>Q83.</strong> Why avoid using ACCOUNTADMIN for daily work?</p>
+<p><strong>Answer:</strong> It is too powerful; reserve it for account-level tasks</p>
+<p>Least privilege.</p>
+<p><strong>Q84.</strong> What are future grants?</p>
+<p><strong>Answer:</strong> Grants that apply automatically to objects created later in a schema or database</p>
+<p>Reduce manual work.</p>
+<h3 id="02-authentication-mfa-key-pairs-oauth-sso"><a href="../level-3/02-authentication/">02 · Authentication: MFA, Key Pairs, OAuth &amp; SSO</a><a class="headerlink" href="#02-authentication-mfa-key-pairs-oauth-sso" title="Permanent link">&para;</a></h3>
+<p><strong>Q85.</strong> What is the recommended authentication for human users?</p>
+<p><strong>Answer:</strong> SSO with MFA</p>
+<p>Add network policies.</p>
+<p><strong>Q86.</strong> What is key-pair authentication for?</p>
+<p><strong>Answer:</strong> Service accounts and drivers without passwords</p>
+<p>Rotate keys.</p>
+<p><strong>Q87.</strong> What do you do for a service account that must not log in interactively?</p>
+<p><strong>Answer:</strong> Use TYPE = SERVICE (or restrict to key-pair and network policy)</p>
+<p>Limit exposure.</p>
+<p><strong>Q88.</strong> Why enforce MFA for privileged roles?</p>
+<p><strong>Answer:</strong> A stolen password alone cannot grant access</p>
+<p>Phishing resistance.</p>
+<h3 id="03-network-policies-private-connectivity"><a href="../level-3/03-network-security/">03 · Network Policies &amp; Private Connectivity</a><a class="headerlink" href="#03-network-policies-private-connectivity" title="Permanent link">&para;</a></h3>
+<p><strong>Q89.</strong> What does a network policy do?</p>
+<p><strong>Answer:</strong> Allows or blocks access by IP address ranges</p>
+<p>Applies at account or user level.</p>
+<p><strong>Q90.</strong> What is private connectivity (such as AWS PrivateLink) for?</p>
+<p><strong>Answer:</strong> Reaching Snowflake without traversing the public internet</p>
+<p>A higher-security option.</p>
+<p><strong>Q91.</strong> What is a risk of a too-narrow IP allow list?</p>
+<p><strong>Answer:</strong> Locking out legitimate users or services</p>
+<p>Test and keep a break-glass path.</p>
+<p><strong>Q92.</strong> Where else should access controls be applied?</p>
+<p><strong>Answer:</strong> Roles, masking and row policies, not only the network</p>
+<p>Defence in depth.</p>
+<h3 id="04-masking-row-access-policies"><a href="../level-3/04-masking-row-access/">04 · Masking &amp; Row Access Policies</a><a class="headerlink" href="#04-masking-row-access-policies" title="Permanent link">&para;</a></h3>
+<p><strong>Q93.</strong> What does a masking policy do?</p>
+<p><strong>Answer:</strong> Returns masked or full column values depending on the querying role</p>
+<p>Applied to columns.</p>
+<p><strong>Q94.</strong> What does a row access policy do?</p>
+<p><strong>Answer:</strong> Filters which rows a role can see</p>
+<p>Based on role or mapping table.</p>
+<p><strong>Q95.</strong> The same idea as a role-based mask, on PostgreSQL: what does the analyst see?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="k">c</span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="nb">text</span><span class="p">,</span><span class="w"> </span><span class="n">email</span><span class="w"> </span><span class="nb">text</span><span class="p">);</span><span class="w"> </span><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="k">c</span><span class="w"> </span><span class="k">values</span><span class="w"> </span><span class="p">(</span><span class="s1">'ana'</span><span class="p">,</span><span class="s1">'ana@x.com'</span><span class="p">);</span><span class="w"> </span><span class="k">create</span><span class="w"> </span><span class="k">view</span><span class="w"> </span><span class="n">c_masked</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">select</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="k">case</span><span class="w"> </span><span class="k">when</span><span class="w"> </span><span class="k">current_user</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'postgres'</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="n">email</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="s1">'***'</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">email</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="k">c</span><span class="p">;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">c_masked</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>Answer:</strong> ana,ana@x.com</p>
+<p>Snowflake masking policies evaluate CURRENT_ROLE() similarly; here the current user is the admin so the real value shows. The standard-SQL part was run on PostgreSQL 18 and its output checked; Snowflake itself was not used, so any Snowflake-only syntax is untested here.</p>
+<p><strong>Q96.</strong> Why prefer policies over copies of masked tables?</p>
+<p><strong>Answer:</strong> One governed source avoids drift and duplicate data</p>
+<p>Central policy.</p>
+<h3 id="05-object-tagging-data-classification"><a href="../level-3/05-tags-classification/">05 · Object Tagging &amp; Data Classification</a><a class="headerlink" href="#05-object-tagging-data-classification" title="Permanent link">&para;</a></h3>
+<p><strong>Q97.</strong> What are object tags?</p>
+<p><strong>Answer:</strong> Key-value metadata attached to objects for governance and cost allocation</p>
+<p>Tag-based masking possible.</p>
+<p><strong>Q98.</strong> What does data classification do?</p>
+<p><strong>Answer:</strong> Detects and tags likely sensitive columns such as emails or national IDs</p>
+<p>Review the results.</p>
+<p><strong>Q99.</strong> How can tags help cost control?</p>
+<p><strong>Answer:</strong> Tag warehouses by team to attribute credits</p>
+<p>Use account usage views.</p>
+<p><strong>Q100.</strong> Why combine tags with masking?</p>
+<p><strong>Answer:</strong> Apply protection automatically to every column carrying a sensitive tag</p>
+<p>Scales governance.</p>
+<h3 id="06-secure-views-secure-functions"><a href="../level-3/06-secure-views-udfs/">06 · Secure Views &amp; Secure Functions</a><a class="headerlink" href="#06-secure-views-secure-functions" title="Permanent link">&para;</a></h3>
+<p><strong>Q101.</strong> What is a secure view?</p>
+<p><strong>Answer:</strong> A view whose definition and optimisation internals are hidden, preventing data leakage through the optimiser</p>
+<p>Required for sharing.</p>
+<p><strong>Q102.</strong> Why are secure views required for shares?</p>
+<p><strong>Answer:</strong> To avoid exposing underlying data through query optimisation side channels</p>
+<p>Consumers see only the view.</p>
+<p><strong>Q103.</strong> What is a SQL UDF?</p>
+<p><strong>Answer:</strong> A user-defined function written in SQL that you call in queries</p>
+<p>Scalar or table functions.</p>
+<p><strong>Q104.</strong> What do you give consumers of a secure view?</p>
+<p><strong>Answer:</strong> SELECT on the view only</p>
+<p>Least privilege.</p>
+<h3 id="07-secure-data-sharing-the-marketplace"><a href="../level-3/07-data-sharing/">07 · Secure Data Sharing &amp; the Marketplace</a><a class="headerlink" href="#07-secure-data-sharing-the-marketplace" title="Permanent link">&para;</a></h3>
+<p><strong>Q105.</strong> What is Snowflake data sharing?</p>
+<p><strong>Answer:</strong> Granting another account read access to live data without copying it</p>
+<p>Providers and consumers.</p>
+<p><strong>Q106.</strong> Does a consumer pay for the provider's storage?</p>
+<p><strong>Answer:</strong> No; the consumer pays for their own compute to query it</p>
+<p>The data is not copied.</p>
+<p><strong>Q107.</strong> What are reader accounts for?</p>
+<p><strong>Answer:</strong> Providing access to consumers who do not have a Snowflake account</p>
+<p>Provider pays compute.</p>
+<p><strong>Q108.</strong> What is the Marketplace?</p>
+<p><strong>Answer:</strong> A catalogue of shared datasets and apps</p>
+<p>Listings.</p>
+<h3 id="08-encryption-key-management-compliance"><a href="../level-3/08-encryption-compliance/">08 · Encryption, Key Management &amp; Compliance</a><a class="headerlink" href="#08-encryption-key-management-compliance" title="Permanent link">&para;</a></h3>
+<p><strong>Q109.</strong> What is encryption at rest in Snowflake?</p>
+<p><strong>Answer:</strong> All data is encrypted by default with a hierarchical key model</p>
+<p>Tri-Secret Secure adds customer-managed keys.</p>
+<p><strong>Q110.</strong> Why rotate keys?</p>
+<p><strong>Answer:</strong> Limit exposure if a key is compromised</p>
+<p>Automatic rotation exists.</p>
+<p><strong>Q111.</strong> Which compliance frameworks does Snowflake support (examples)?</p>
+<p><strong>Answer:</strong> SOC 2, ISO 27001 and others depending on edition and region</p>
+<p>Check the current compliance documentation.</p>
+<p><strong>Q112.</strong> What is your responsibility under shared responsibility?</p>
+<p><strong>Answer:</strong> Configuring access, policies and data handling correctly</p>
+<p>Misconfiguration is the main risk.</p>
+<h3 id="09-auditing-with-account_usage-access-history"><a href="../level-3/09-auditing-account-usage/">09 · Auditing with ACCOUNT_USAGE &amp; Access History</a><a class="headerlink" href="#09-auditing-with-account_usage-access-history" title="Permanent link">&para;</a></h3>
+<p><strong>Q113.</strong> Where do you audit who queried what?</p>
+<p><strong>Answer:</strong> ACCOUNT_USAGE views such as QUERY_HISTORY and ACCESS_HISTORY</p>
+<p>They have some latency.</p>
+<p><strong>Q114.</strong> What is a limitation of ACCOUNT_USAGE views?</p>
+<p><strong>Answer:</strong> Data can lag by up to a few hours and is retained for about a year</p>
+<p>Use INFORMATION_SCHEMA for near real time.</p>
+<p><strong>Q115.</strong> What does ACCESS_HISTORY show?</p>
+<p><strong>Answer:</strong> Which objects and columns were accessed by queries</p>
+<p>Useful for governance.</p>
+<p><strong>Q116.</strong> What should you alert on?</p>
+<p><strong>Answer:</strong> Failed logins, privilege grants and unusual data exports</p>
+<p>Practical detection.</p>
+<h3 id="10-project-a-governed-multi-team-platform"><a href="../level-3/10-project-governed-platform/">10 · Project — A Governed Multi-Team Platform</a><a class="headerlink" href="#10-project-a-governed-multi-team-platform" title="Permanent link">&para;</a></h3>
+<p><strong>Q117.</strong> What does the governed platform project assemble?</p>
+<p><strong>Answer:</strong> RBAC, masking, row policies, tags, secure sharing and auditing</p>
+<p>Governance at scale.</p>
+<p><strong>Q118.</strong> Which comes first when designing access?</p>
+<p><strong>Answer:</strong> Define roles by job function and grant least privilege</p>
+<p>Role hierarchy.</p>
+<p><strong>Q119.</strong> How do you prove controls work?</p>
+<p><strong>Answer:</strong> Test with different roles and review audit logs</p>
+<p>Evidence.</p>
+<p><strong>Q120.</strong> Why document the role model?</p>
+<p><strong>Answer:</strong> So reviewers and new admins understand and maintain it</p>
+<p>Operational clarity.</p>
+<h2 id="level-4-building-scaling-operating">Level 4 · Building, Scaling &amp; Operating<a class="headerlink" href="#level-4-building-scaling-operating" title="Permanent link">&para;</a></h2>
+<h3 id="01-udfs-stored-procedures"><a href="../level-4/01-udfs-procedures/">01 · UDFs &amp; Stored Procedures</a><a class="headerlink" href="#01-udfs-stored-procedures" title="Permanent link">&para;</a></h3>
+<p><strong>Q121.</strong> What is a stored procedure for?</p>
+<p><strong>Answer:</strong> Procedural logic with control flow, executed with the caller's or owner's rights</p>
+<p>Languages include SQL scripting, JavaScript and Python.</p>
+<p><strong>Q122.</strong> What do UDFs return compared with procedures?</p>
+<p><strong>Answer:</strong> UDFs return values used inside queries; procedures perform actions and can return a result</p>
+<p>Different roles.</p>
+<p><strong>Q123.</strong> What does EXECUTE AS OWNER mean?</p>
+<p><strong>Answer:</strong> The procedure runs with its owner's privileges</p>
+<p>Careful with privilege escalation.</p>
+<p><strong>Q124.</strong> Why write set-based SQL instead of loops in procedures?</p>
+<p><strong>Answer:</strong> Set-based statements use the engine's parallelism</p>
+<p>Row-by-row is slow.</p>
+<h3 id="02-snowpark-for-python"><a href="../level-4/02-snowpark-python/">02 · Snowpark for Python</a><a class="headerlink" href="#02-snowpark-for-python" title="Permanent link">&para;</a></h3>
+<p><strong>Q125.</strong> What is Snowpark?</p>
+<p><strong>Answer:</strong> A developer framework for running DataFrame-style code (Python, Java, Scala) inside Snowflake</p>
+<p>Code is pushed to the data.</p>
+<p><strong>Q126.</strong> Where does Snowpark Python code execute?</p>
+<p><strong>Answer:</strong> On Snowflake's compute, translated to SQL or run in sandboxed Python</p>
+<p>Avoid pulling data to the client.</p>
+<p><strong>Q127.</strong> What do lazy DataFrames mean?</p>
+<p><strong>Answer:</strong> Operations build a query that runs only when an action like collect or show is called</p>
+<p>Similar to Spark.</p>
+<p><strong>Q128.</strong> Why avoid collect() on big tables?</p>
+<p><strong>Answer:</strong> It brings all rows to the client and defeats pushdown</p>
+<p>Aggregate in Snowflake.</p>
+<h3 id="03-python-udfs-vectorized-udfs-udtfs"><a href="../level-4/03-python-udfs/">03 · Python UDFs, Vectorized UDFs &amp; UDTFs</a><a class="headerlink" href="#03-python-udfs-vectorized-udfs-udtfs" title="Permanent link">&para;</a></h3>
+<p><strong>Q129.</strong> What can a Python UDF do?</p>
+<p><strong>Answer:</strong> Run Python logic per row inside a query, with approved packages</p>
+<p>Packages come from the Anaconda channel.</p>
+<p><strong>Q130.</strong> What is a vectorised UDF?</p>
+<p><strong>Answer:</strong> A UDF that processes batches of rows (such as pandas) for better performance</p>
+<p>Reduces per-row overhead.</p>
+<p><strong>Q131.</strong> Why prefer built-in SQL functions over Python UDFs when possible?</p>
+<p><strong>Answer:</strong> They are faster and optimised</p>
+<p>Use UDFs where SQL cannot.</p>
+<p><strong>Q132.</strong> How are package dependencies handled?</p>
+<p><strong>Answer:</strong> Declared with PACKAGES or imported from a stage</p>
+<p>Sandboxed environment.</p>
+<h3 id="04-cortex-ai-functions"><a href="../level-4/04-cortex-ai/">04 · Cortex AI Functions</a><a class="headerlink" href="#04-cortex-ai-functions" title="Permanent link">&para;</a></h3>
+<p><strong>Q133.</strong> What is Snowflake Cortex?</p>
+<p><strong>Answer:</strong> AI functions and services (such as LLM functions and search) available in SQL</p>
+<p>Use under governance.</p>
+<p><strong>Q134.</strong> What should you consider before sending data to an LLM function?</p>
+<p><strong>Answer:</strong> Data governance, cost and where processing occurs</p>
+<p>Check policies.</p>
+<p><strong>Q135.</strong> Why validate LLM outputs in pipelines?</p>
+<p><strong>Answer:</strong> They can be wrong or inconsistent; add checks and sampling</p>
+<p>Human review for critical use.</p>
+<p><strong>Q136.</strong> How can you control Cortex cost?</p>
+<p><strong>Answer:</strong> Limit rows and models, monitor usage and set budgets</p>
+<p>Credits apply.</p>
+<h3 id="05-cost-management-monitors-budgets-attribution"><a href="../level-4/05-cost-management/">05 · Cost Management: Monitors, Budgets &amp; Attribution</a><a class="headerlink" href="#05-cost-management-monitors-budgets-attribution" title="Permanent link">&para;</a></h3>
+<p><strong>Q137.</strong> Which items drive Snowflake cost?</p>
+<p><strong>Answer:</strong> Compute (credits), storage and data transfer/serverless features</p>
+<p>Compute is usually the largest.</p>
+<p><strong>Q138.</strong> What is a resource monitor?</p>
+<p><strong>Answer:</strong> A guardrail that notifies or suspends warehouses when credit thresholds are reached</p>
+<p>Set per warehouse or account.</p>
+<p><strong>Q139.</strong> What is the cheapest quick win for idle compute?</p>
+<p><strong>Answer:</strong> Set a short AUTO_SUSPEND and enable AUTO_RESUME</p>
+<p>Avoid paying for idle.</p>
+<p><strong>Q140.</strong> A Small warehouse (2 credits/hour) left running 24/7 for 30 days uses how many credits?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 1440</p>
+<p>That is why auto-suspend matters. (Any standard SQL here was run on PostgreSQL 18; Snowflake itself was not used.)</p>
+<h3 id="06-warehouse-scaling-up-out-adaptive"><a href="../level-4/06-warehouse-scaling/">06 · Warehouse Scaling: Up, Out &amp; Adaptive</a><a class="headerlink" href="#06-warehouse-scaling-up-out-adaptive" title="Permanent link">&para;</a></h3>
+<p><strong>Q141.</strong> What is multi-cluster warehouse scaling for?</p>
+<p><strong>Answer:</strong> Handling concurrency by adding clusters when queries queue</p>
+<p>Scale out versus scale up.</p>
+<p><strong>Q142.</strong> When do you scale up (bigger size)?</p>
+<p><strong>Answer:</strong> For slow individual queries limited by compute or memory</p>
+<p>Test sizes.</p>
+<p><strong>Q143.</strong> What is the Standard vs Economy scaling policy?</p>
+<p><strong>Answer:</strong> Standard favours starting clusters to avoid queuing; Economy favours conserving credits</p>
+<p>Choose by workload.</p>
+<p><strong>Q144.</strong> How do you right-size?</p>
+<p><strong>Answer:</strong> Measure query times and queuing at different sizes and choose the cheapest that meets the SLA</p>
+<p>Larger can finish faster at similar cost.</p>
+<h3 id="07-replication-failover-business-continuity"><a href="../level-4/07-replication-bcdr/">07 · Replication, Failover &amp; Business Continuity</a><a class="headerlink" href="#07-replication-failover-business-continuity" title="Permanent link">&para;</a></h3>
+<p><strong>Q145.</strong> What does database replication provide?</p>
+<p><strong>Answer:</strong> A read-only copy in another region or account for DR and sharing</p>
+<p>Refresh on a schedule.</p>
+<p><strong>Q146.</strong> What does failover add?</p>
+<p><strong>Answer:</strong> Promoting the secondary to primary during an outage</p>
+<p>Plan and test it.</p>
+<p><strong>Q147.</strong> What are RPO and RTO?</p>
+<p><strong>Answer:</strong> Acceptable data loss and acceptable recovery time</p>
+<p>Drive the design.</p>
+<p><strong>Q148.</strong> Why test failover regularly?</p>
+<p><strong>Answer:</strong> An untested plan may fail when needed</p>
+<p>Run drills.</p>
+<h3 id="08-dbt-cicd-for-snowflake"><a href="../level-4/08-dbt-cicd/">08 · dbt &amp; CI/CD for Snowflake</a><a class="headerlink" href="#08-dbt-cicd-for-snowflake" title="Permanent link">&para;</a></h3>
+<p><strong>Q149.</strong> What does dbt do with Snowflake?</p>
+<p><strong>Answer:</strong> Transforms data with version-controlled SQL models, tests and documentation</p>
+<p>Compiled to SQL.</p>
+<p><strong>Q150.</strong> What should CI do for a dbt project?</p>
+<p><strong>Answer:</strong> Build changed models in a clone or dev schema and run tests before merging</p>
+<p>Zero-copy clones make this cheap.</p>
+<p><strong>Q151.</strong> How do you promote changes safely?</p>
+<p><strong>Answer:</strong> Pull request, review, CI checks, then deploy via a pipeline</p>
+<p>Infrastructure as code.</p>
+<p><strong>Q152.</strong> Why use separate roles for CI and production?</p>
+<p><strong>Answer:</strong> Least privilege and auditability</p>
+<p>Limit blast radius.</p>
+<h3 id="09-migrating-to-snowflake"><a href="../level-4/09-migration/">09 · Migrating to Snowflake</a><a class="headerlink" href="#09-migrating-to-snowflake" title="Permanent link">&para;</a></h3>
+<p><strong>Q153.</strong> What is the first step of a migration to Snowflake?</p>
+<p><strong>Answer:</strong> Inventory sources, dependencies and requirements, then plan phases</p>
+<p>Know what you have.</p>
+<p><strong>Q154.</strong> Why validate migrated data?</p>
+<p><strong>Answer:</strong> Row counts and checksums confirm nothing was lost or changed</p>
+<p>Reconcile before cutover.</p>
+<p><strong>Q155.</strong> What is a common migration risk?</p>
+<p><strong>Answer:</strong> Dialect differences in SQL and procedural logic</p>
+<p>Test code conversion.</p>
+<p><strong>Q156.</strong> How do you reduce cutover risk?</p>
+<p><strong>Answer:</strong> Run old and new in parallel and cut over by workload</p>
+<p>Phased.</p>
+<h3 id="10-capstone-a-cost-aware-data-platform"><a href="../level-4/10-capstone-cost-aware-platform/">10 · Capstone — A Cost-Aware Data Platform</a><a class="headerlink" href="#10-capstone-a-cost-aware-data-platform" title="Permanent link">&para;</a></h3>
+<p><strong>Q157.</strong> What is the capstone's goal?</p>
+<p><strong>Answer:</strong> A cost-aware, governed Snowflake platform design with pipelines, security and monitoring</p>
+<p>Bring Level 4 together.</p>
+<p><strong>Q158.</strong> Which evidence shows cost awareness?</p>
+<p><strong>Answer:</strong> Resource monitors, tagged warehouses, auto-suspend and usage dashboards</p>
+<p>Measure.</p>
+<p><strong>Q159.</strong> How do you handle residual risk?</p>
+<p><strong>Answer:</strong> Document it and decide to accept, mitigate or transfer</p>
+<p>Risk register.</p>
+<p><strong>Q160.</strong> What belongs in the README?</p>
+<p><strong>Answer:</strong> Architecture, roles, pipelines, runbooks and costs</p>
+<p>Handover.</p>
+<h2 id="mixed-questions-across-all-levels">Mixed questions across all levels<a class="headerlink" href="#mixed-questions-across-all-levels" title="Permanent link">&para;</a></h2>
+<p><strong>Q161.</strong> What does this return?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">t</span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="nb">int</span><span class="p">,</span><span class="w"> </span><span class="n">grp</span><span class="w"> </span><span class="nb">text</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="nb">int</span><span class="p">);</span><span class="w"> </span><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="k">values</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s1">'a'</span><span class="p">,</span><span class="mi">10</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="s1">'a'</span><span class="p">,</span><span class="mi">20</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="s1">'b'</span><span class="p">,</span><span class="mi">5</span><span class="p">);</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="k">select</span><span class="w"> </span><span class="n">grp</span><span class="p">,</span><span class="w"> </span><span class="k">sum</span><span class="p">(</span><span class="n">v</span><span class="p">),</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">v</span><span class="p">)::</span><span class="nb">int</span><span class="p">,</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">grp</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">grp</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>Answer:</strong> a,30,15,2; b,5,5,1</p>
+<p>Grouped aggregates; the same in Snowflake. The standard-SQL part was run on PostgreSQL 18 and its output checked; Snowflake itself was not used, so any Snowflake-only syntax is untested here.</p>
+<p><strong>Q162.</strong> What does this window query return?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">t</span><span class="p">(</span><span class="n">d</span><span class="w"> </span><span class="nb">int</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="nb">int</span><span class="p">);</span><span class="w"> </span><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="k">values</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">20</span><span class="p">),(</span><span class="mi">3</span><span class="p">,</span><span class="mi">30</span><span class="p">);</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="k">select</span><span class="w"> </span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="k">sum</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="n">over</span><span class="w"> </span><span class="p">(</span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">d</span><span class="p">)</span><span class="w"> </span><span class="n">running</span><span class="p">,</span><span class="w"> </span><span class="n">lag</span><span class="p">(</span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="n">over</span><span class="w"> </span><span class="p">(</span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">d</span><span class="p">)</span><span class="w"> </span><span class="n">prev</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">d</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 1,10,; 2,30,10; 3,60,20</p>
+<p>A running sum and the previous row's value (NULL first). The standard-SQL part was run on PostgreSQL 18 and its output checked; Snowflake itself was not used, so any Snowflake-only syntax is untested here.</p>
+<p><strong>Q163.</strong> What does this NULL-handling query return?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">t</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="nb">int</span><span class="p">);</span><span class="w"> </span><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="k">values</span><span class="w"> </span><span class="p">(</span><span class="mi">1</span><span class="p">),(</span><span class="k">null</span><span class="p">),(</span><span class="mi">3</span><span class="p">);</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="k">select</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">),</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="w"> </span><span class="k">sum</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="w"> </span><span class="k">coalesce</span><span class="p">(</span><span class="k">max</span><span class="p">(</span><span class="n">x</span><span class="p">),</span><span class="mi">0</span><span class="p">),</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">x</span><span class="p">)::</span><span class="nb">numeric</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">t</span><span class="p">;</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 3,2,4,3,2.0</p>
+<p>NULLs are ignored by aggregates; count(*) counts rows. The standard-SQL part was run on PostgreSQL 18 and its output checked; Snowflake itself was not used, so any Snowflake-only syntax is untested here.</p>
+<p><strong>Q164.</strong> A table is 500 micro-partitions and your filter touches 20. What does pruning mean for cost?</p>
+<p><strong>Answer:</strong> Only the matching partitions are scanned, so the query reads far less data</p>
+<p>Min/max metadata excludes the rest.</p>
+<p><strong>Q165.</strong> Why is auto-suspend a main cost control?</p>
+<p><strong>Answer:</strong> Compute credits accrue only while a warehouse runs, so idle warehouses should suspend</p>
+<p>Per-second billing with a 60-second minimum on resume.</p>
+<p><strong>Q166.</strong> An XL warehouse (16 credits/hour) runs 15 minutes. How many credits (per-second billing)?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nb">print</span><span class="p">(</span><span class="mi">16</span><span class="o">*</span><span class="mf">0.25</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 4.0</p>
+<p>Rate x hours. (Any standard SQL here was run on PostgreSQL 18; Snowflake itself was not used.)</p>
+<p><strong>Q167.</strong> Which cache can answer an identical repeated query without using a warehouse?</p>
+<p><strong>Answer:</strong> The result cache (valid for 24 hours if data is unchanged)</p>
+<p>Cloud services return the stored result.</p>
+<p><strong>Q168.</strong> What is the difference between Time Travel and Fail-safe?</p>
+<p><strong>Answer:</strong> Time Travel is user-accessible recovery within the retention period; Fail-safe is a 7-day last-resort period handled by Snowflake support</p>
+<p>Fail-safe is not configurable or for routine recovery.</p>
+<p><strong>Q169.</strong> Why is a zero-copy clone cheap?</p>
+<p><strong>Answer:</strong> It shares existing micro-partitions and stores only changes made afterwards</p>
+<p>Ideal for dev/test.</p>
+<p><strong>Q170.</strong> A stream shows an updated row as which pair of records?</p>
+<p><strong>Answer:</strong> A DELETE and an INSERT with METADATA$ISUPDATE = TRUE</p>
+<p>Consume streams in DML to advance the offset.</p>
+<p><strong>Q171.</strong> Which object keeps a result continuously refreshed within a freshness goal?</p>
+<p><strong>Answer:</strong> A dynamic table with TARGET_LAG</p>
+<p>Declarative pipelines.</p>
+<p><strong>Q172.</strong> Why prefer role-based masking policies over duplicate masked tables?</p>
+<p><strong>Answer:</strong> One governed table avoids drift and extra storage while each role sees what it is allowed to</p>
+<p>Policies attach to columns.</p>
+<p><strong>Q173.</strong> Why are secure views used for data sharing?</p>
+<p><strong>Answer:</strong> They hide definitions and prevent optimiser side-channel leakage of data consumers shouldn't see</p>
+<p>A requirement for shares.</p>
+<p><strong>Q174.</strong> What should a service account use for authentication?</p>
+<p><strong>Answer:</strong> Key-pair (or OAuth) with a network policy, not a shared password</p>
+<p>Rotate keys.</p>
+<p><strong>Q175.</strong> Where do you audit which columns were accessed by whom?</p>
+<p><strong>Answer:</strong> ACCOUNT_USAGE.ACCESS_HISTORY (with QUERY_HISTORY)</p>
+<p>Views have some latency.</p>
+<p><strong>Q176.</strong> When should you scale a warehouse out (multi-cluster) instead of up?</p>
+<p><strong>Answer:</strong> When many concurrent queries queue, not when a single query is slow</p>
+<p>Scale up for single heavy queries.</p>
+<p><strong>Q177.</strong> What does Snowpark pushdown mean for large DataFrames?</p>
+<p><strong>Answer:</strong> Operations are translated to SQL and run in Snowflake instead of pulling data to the client</p>
+<p>Avoid collect() on big tables.</p>
+<p><strong>Q178.</strong> How do you make an incremental load safe to re-run?</p>
+<p><strong>Answer:</strong> Make it idempotent with MERGE on a key so duplicates and re-processing change nothing</p>
+<p>Verify with a second run.</p>
+<p><strong>Q179.</strong> What is the right use of Cortex or LLM functions in a pipeline?</p>
+<p><strong>Answer:</strong> With governance, cost limits and validation of outputs, since results can be wrong</p>
+<p>Sample and monitor.</p>
+<p><strong>Q180.</strong> What is the safest migration cutover approach?</p>
+<p><strong>Answer:</strong> Run old and new in parallel, reconcile results and cut over workload by workload</p>
+<p>Validate with row counts and checksums.</p>
+<h2 id="practical-coding-questions">Practical coding questions<a class="headerlink" href="#practical-coding-questions" title="Permanent link">&para;</a></h2>
+<h3 id="sales-analytics-with-window-functions">Sales analytics with window functions<a class="headerlink" href="#sales-analytics-with-window-functions" title="Permanent link">&para;</a></h3>
+<p>Write three analytics queries over a small sales table: monthly revenue with a running total and share of region, the best rep per region and the month-over-month change. These run on PostgreSQL here because Snowflake is not available to me; the SQL is standard, and where Snowflake offers QUALIFY the comments say so.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>create table sales(id int, region text, rep text, sold_on date, amount numeric);
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>insert into sales values
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a> (1,'north','ana','2026-01-05',120),(2,'north','bo','2026-01-09',80),(3,'north','ana','2026-02-02',200),
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a> (4,'south','cy','2026-01-07',150),(5,'south','di','2026-01-20',90),(6,'south','cy','2026-02-11',60),
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a> (7,'north','bo','2026-02-15',140),(8,'south','di','2026-02-28',300);
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>-- TODO 1: monthly revenue per region (to_char(sold_on,'YYYY-MM')) with a running total per region and each month's % of the region total (1 decimal); order by region, month
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>-- TODO 2: the best rep per region by total amount (ties by rep name) - Snowflake would use QUALIFY; here use a subquery with row_number()
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>-- TODO 3: month-over-month change in revenue per region using lag(); the first month's change is NULL (printed as empty)
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>north | 2026-01 | 200 | 200 | 37.0
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>north | 2026-02 | 340 | 540 | 63.0
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>south | 2026-01 | 240 | 240 | 40.0
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>south | 2026-02 | 360 | 600 | 60.0
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>north | ana | 320
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>south | di | 390
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>north | 2026-01 | 200 | 
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>north | 2026-02 | 340 | 140
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>south | 2026-01 | 240 | 
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>south | 2026-02 | 360 | 120
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+create table sales(id int, region text, rep text, sold_on date, amount numeric);
+insert into sales values
+ (1,'north','ana','2026-01-05',120),(2,'north','bo','2026-01-09',80),(3,'north','ana','2026-02-02',200),
+ (4,'south','cy','2026-01-07',150),(5,'south','di','2026-01-20',90),(6,'south','cy','2026-02-11',60),
+ (7,'north','bo','2026-02-15',140),(8,'south','di','2026-02-28',300);
+
+-- 1. monthly revenue per region with running total and share of the region's total
+select region, to_char(sold_on,'YYYY-MM') as month, sum(amount) as revenue,
+       sum(sum(amount)) over (partition by region order by to_char(sold_on,'YYYY-MM')) as running,
+       round(100 * sum(amount) / sum(sum(amount)) over (partition by region), 1) as pct_of_region
+from sales group by region, to_char(sold_on,'YYYY-MM')
+order by region, month;
+
+-- 2. best rep per region (the Snowflake way would be QUALIFY row_number() = 1)
+select region, rep, total from (
+  select region, rep, sum(amount) as total,
+         row_number() over (partition by region order by sum(amount) desc, rep) as rn
+  from sales group by region, rep
+) x where rn = 1 order by region;
+
+-- 3. month-over-month change for each region
+select region, month, revenue, revenue - lag(revenue) over (partition by region order by month) as change from (
+  select region, to_char(sold_on,'YYYY-MM') as month, sum(amount) as revenue from sales group by 1, 2
+) m order by region, month;
+```
+
+Window functions can wrap aggregates (sum(sum(amount)) over ...), and row_number() in a subquery is exactly what QUALIFY expresses in Snowflake. lag() gives the previous month, NULL for the first. Verified by running it on PostgreSQL 18; not run on Snowflake.
+</code></pre></div>
+<h3 id="an-idempotent-change-capture-upsert">An idempotent change-capture upsert<a class="headerlink" href="#an-idempotent-change-capture-upsert" title="Permanent link">&para;</a></h3>
+<p>Simulate a stream plus MERGE: find the new and changed staging rows, apply them to the target only when values really differ and prove a second run finds nothing left to do. PostgreSQL's ON CONFLICT stands in for Snowflake's MERGE; Snowflake itself was not used.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>create table target(id int primary key, name text, plan text, updated date);
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>insert into target values (1,'ana','free','2026-01-01'),(2,'bo','pro','2026-01-01'),(3,'cy','free','2026-01-01');
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>create table staging(id int, name text, plan text, updated date);
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>insert into staging values (2,'bo','free','2026-02-01'),(3,'cy','free','2026-02-01'),(4,'di','pro','2026-02-01');
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>-- TODO 1: list the changes a stream would report: staging rows that are new ("insert") or whose (name, plan) differ from target ("update"), ordered by id
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>-- TODO 2: apply them idempotently with INSERT ... ON CONFLICT (Snowflake: MERGE), changing a row only when (name, plan) really differ, then show target ordered by id
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>-- TODO 3: count staging rows that still differ from target (should be 0 on a re-run)
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>2 | update
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>4 | insert
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>1 | ana | free | 2026-01-01
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>2 | bo | free | 2026-02-01
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>3 | cy | free | 2026-01-01
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>4 | di | pro | 2026-02-01
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>0
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+create table target(id int primary key, name text, plan text, updated date);
+insert into target values (1,'ana','free','2026-01-01'),(2,'bo','pro','2026-01-01'),(3,'cy','free','2026-01-01');
+create table staging(id int, name text, plan text, updated date);
+insert into staging values (2,'bo','free','2026-02-01'),(3,'cy','free','2026-02-01'),(4,'di','pro','2026-02-01');
+
+-- 1. the changes a stream would report: new rows and rows whose values differ
+select s.id, case when t.id is null then 'insert' else 'update' end as action
+from staging s left join target t on t.id = s.id
+where t.id is null or (t.name, t.plan) is distinct from (s.name, s.plan)
+order by s.id;
+
+-- 2. apply them idempotently (Snowflake: MERGE INTO ... WHEN MATCHED / NOT MATCHED)
+insert into target select * from staging
+on conflict (id) do update set name = excluded.name, plan = excluded.plan, updated = excluded.updated
+where (target.name, target.plan) is distinct from (excluded.name, excluded.plan);
+
+select * from target order by id;
+
+-- 3. running it again changes nothing: the change set is now empty
+select count(*) as pending from staging s join target t on t.id = s.id
+where (t.name, t.plan) is distinct from (s.name, s.plan);
+```
+
+IS DISTINCT FROM compares row values null-safely, so unchanged rows are not rewritten and the pending count drops to zero. In Snowflake you would write MERGE INTO ... WHEN MATCHED AND (...) THEN UPDATE WHEN NOT MATCHED THEN INSERT. Verified by running it on PostgreSQL 18; not run on Snowflake.
+</code></pre></div>
+<hr />
+<p>More free practice: the <a href="../">Snowflake Mastery Path</a> curriculum, the <a href="https://learnmasterypath.com/interview-pack/">Interview Prep Pack</a> and the <a href="https://learnmasterypath.com/resume/">free resume ATS check</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+  
+  <nav class="mp-related" aria-label="Related free courses">
+    <h2>Related free courses</h2>
+    <ul>
+      <li><a href="https://learnmasterypath.com/postgresql-mastery-path/">PostgreSQL</a></li><li><a href="https://learnmasterypath.com/mongodb-mastery-path/">MongoDB</a></li><li><a href="https://learnmasterypath.com/redis-mastery-path/">Redis</a></li><li><a href="https://learnmasterypath.com/databricks-mastery-path/">Databricks</a></li><li><a href="https://learnmasterypath.com/python-mastery-path/vector-databases-mastery-path/">Vector Databases</a></li>
+      <li><a href="https://learnmasterypath.com/">All 100+ courses &rarr;</a></li>
+    </ul>
+  </nav>
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../cheat-sheet/" class="md-footer__link md-footer__link--next" aria-label="Next: Cheat Sheet">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Cheat Sheet
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+  <div class="mp-foot">
+    <div class="mp-foot-inner">
+      <a class="mp-foot-brand" href="https://learnmasterypath.com/"><svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg><span>Mastery Path</span></a>
+      <nav class="mp-sitelinks" aria-label="Site and legal links">
+        <a href="https://learnmasterypath.com/">All courses</a>
+        <a href="https://learnmasterypath.com/about.html">About</a>
+        <a href="https://learnmasterypath.com/contact.html">Contact</a>
+        <a href="https://learnmasterypath.com/snowflake-mastery-path/privacy/">Privacy Policy</a>
+        <a href="https://learnmasterypath.com/terms.html">Terms</a>
+        <a href="https://learnmasterypath.com/snowflake-mastery-path/license/">License</a>
+        <a href="https://learnmasterypath.com/verify/">Verify a certificate</a>
+      </nav>
+    </div>
+    <p class="mp-license-note">
+      © 2026 Vinod Kumar Sigilipelli · Except where otherwise noted, lesson content is licensed under
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and code examples under the
+      <a href="https://opensource.org/license/mit">MIT License</a>.
+    </p>
+  </div>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../javascripts/progress-tracker.js"></script>
+      
+        <script src="../javascripts/final-quiz.js"></script>
+      
+    
+  </body>
+</html>
