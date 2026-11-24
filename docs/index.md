@@ -1,6 +1,6 @@
 ---
 title: "Free Snowflake Course: Architecture, Loading, Performance, Streams and Tasks, Security, Sharing, Snowpark, Cortex AI, Cost and dbt"
-description: "Free Snowflake course: 40 lessons on architecture, loading, pruning, pipelines, governance, Snowpark, Cortex AI, cost control and dbt CI/CD."
+description: "Free Snowflake course: 36 lessons and 4 projects on architecture, loading, pruning, pipelines, governance, Snowpark, Cortex AI, cost control and dbt CI/CD."
 ---
 
 # Snowflake Mastery Path
@@ -54,7 +54,7 @@ bill.
 | **3 · Security, Governance & Sharing** | RBAC, authentication, network, masking, tags, secure views, sharing, encryption, auditing | 10 | Run a shared platform where access is designed, tested and audited |
 | **4 · Building, Scaling & Operating** | UDFs, Snowpark, Cortex AI, cost, scaling, replication, dbt CI/CD, migration | 10 | Build on Snowflake and keep it fast, recoverable and affordable |
 
-Each level has 9 teaching modules plus a hands-on project (module 10), for **40 lessons** total.
+Each level has 9 teaching modules plus a hands-on project (module 10), which makes **36 lessons and 4 projects** in total.
 
 ## How to use this site
 
